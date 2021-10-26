@@ -1,0 +1,23 @@
+uuid: 72e1f303-1892-4227-ad93-6f828e40c031
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_text_1.field_news_body
+    - paragraphs.paragraphs_type.news_text_1
+  module:
+    - text
+id: paragraph.news_text_1.default
+targetEntityType: paragraph
+bundle: news_text_1
+mode: default
+content:
+  field_news_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  search_api_excerpt: true

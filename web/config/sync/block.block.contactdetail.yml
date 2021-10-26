@@ -1,0 +1,30 @@
+uuid: 50b940fa-b5ab-45c3-95b7-83f6a5b3b906
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9e9d7920-7562-40ad-997d-30aa61a4cf2a'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: contactdetail
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:9e9d7920-7562-40ad-997d-30aa61a4cf2a'
+settings:
+  id: 'block_content:9e9d7920-7562-40ad-997d-30aa61a4cf2a'
+  label: 'CONTACT DETAIL'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false

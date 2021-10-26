@@ -1,0 +1,54 @@
+uuid: c6b2f57d-0149-4ee3-aba4-ce13730a6240
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_links_you_may_also_like_.field_relative_news
+    - field.field.paragraph.news_links_you_may_also_like_.field_relative_news_link_2
+    - field.field.paragraph.news_links_you_may_also_like_.field_you_may_also_like_title
+    - paragraphs.paragraphs_type.news_links_you_may_also_like_
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.news_links_you_may_also_like_.default
+targetEntityType: paragraph
+bundle: news_links_you_may_also_like_
+mode: default
+content:
+  field_relative_news:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_relative_news_link_2:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_you_may_also_like_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

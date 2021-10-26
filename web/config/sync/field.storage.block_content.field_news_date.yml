@@ -1,0 +1,20 @@
+uuid: c1c332a9-a0e1-4a23-9e44-b394fe5025a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - datetime
+id: block_content.field_news_date
+field_name: field_news_date
+entity_type: block_content
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

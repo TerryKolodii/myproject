@@ -1,0 +1,25 @@
+uuid: 6f4bc111-bd44-40e5-80b1-61aa4922e4e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:subscription:f8f09992-e602-4c8e-8abb-66f44839146e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: subscriptionform_2
+theme: bartik
+region: footer_third
+weight: -10
+provider: null
+plugin: 'block_content:f8f09992-e602-4c8e-8abb-66f44839146e'
+settings:
+  id: 'block_content:f8f09992-e602-4c8e-8abb-66f44839146e'
+  label: 'Subscription form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

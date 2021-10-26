@@ -1,0 +1,17 @@
+uuid: 491ce1a2-b9d1-415b-8517-d1198734fe32
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: News
+type: news
+description: 'News page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

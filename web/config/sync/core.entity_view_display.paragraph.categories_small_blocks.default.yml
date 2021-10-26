@@ -1,0 +1,13 @@
+uuid: 8615b052-11fb-406d-988d-3c591be67be6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.categories_small_blocks
+id: paragraph.categories_small_blocks.default
+targetEntityType: paragraph
+bundle: categories_small_blocks
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

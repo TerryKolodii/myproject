@@ -1,0 +1,45 @@
+uuid: f06289aa-b98d-4e9c-ab40-8b592566d13a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription
+    - field.field.block_content.subscription.field_subscription
+  module:
+    - field_layout
+    - layout_discovery
+    - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: block_content.subscription.default
+targetEntityType: block_content
+bundle: subscription
+mode: default
+content:
+  field_subscription:
+    weight: 27
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: 7111132e-2a2d-46cf-ad8e-db4db093d1aa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:subscription:f8f09992-e602-4c8e-8abb-66f44839146e'
+  module:
+    - block_content
+  theme:
+    - news
+id: news_subscriptionform_2
+theme: news
+region: footer_third
+weight: -10
+provider: null
+plugin: 'block_content:f8f09992-e602-4c8e-8abb-66f44839146e'
+settings:
+  id: 'block_content:f8f09992-e602-4c8e-8abb-66f44839146e'
+  label: 'Subscription form'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

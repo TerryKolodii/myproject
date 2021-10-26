@@ -1,0 +1,10 @@
+uuid: 13fa46e1-ee75-4ef7-8eeb-b0d774b77656
+langcode: en
+status: true
+dependencies: {  }
+id: news_links_you_may_also_like_
+label: 'News links (you may also like)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

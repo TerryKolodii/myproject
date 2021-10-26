@@ -1,0 +1,29 @@
+uuid: cd5eae85-e3fa-4ea2-a276-c5f28421eeb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block_small
+    - field.storage.block_content.field_news_author
+id: block_content.trending_news_block_small.field_news_author
+field_name: field_news_author
+entity_type: block_content
+bundle: trending_news_block_small
+label: 'news author'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

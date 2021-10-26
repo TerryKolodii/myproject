@@ -1,0 +1,25 @@
+uuid: 561c7911-1a05-4586-80dc-6c15ad327655
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ads_block:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+  module:
+    - block_content
+  theme:
+    - news
+id: news_adsblockright
+theme: news
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+settings:
+  id: 'block_content:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+  label: 'Ads-block right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 7862d16e-888b-4be2-9384-e8c2efbc0b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block
+    - field.storage.block_content.field_news_reference
+    - node.type.news
+id: block_content.trending_news_block.field_news_reference
+field_name: field_news_reference
+entity_type: block_content
+bundle: trending_news_block
+label: 'news reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 75265e19-1eeb-46a8-93d8-15f2507669de
+langcode: en
+status: true
+dependencies: {  }
+name: 'News categories'
+vid: news_categories
+description: 'News categories (= primary menu)'
+weight: 0

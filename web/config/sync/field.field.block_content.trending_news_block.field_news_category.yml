@@ -1,0 +1,29 @@
+uuid: 29e97e27-055a-4814-822b-c737934c2a0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block
+    - field.storage.block_content.field_news_category
+    - taxonomy.vocabulary.news_categories
+id: block_content.trending_news_block.field_news_category
+field_name: field_news_category
+entity_type: block_content
+bundle: trending_news_block
+label: 'news category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_categories: news_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

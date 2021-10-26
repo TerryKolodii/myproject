@@ -1,0 +1,15 @@
+uuid: fb4279ae-cb6e-42e2-a19c-9e7eebaeb6ac
+langcode: en
+status: true
+dependencies: {  }
+name: trending_news_block_small
+label: 'Trending news block small (285x250)'
+effects:
+  93dcfe4d-f372-40a3-b482-941c6b667c2b:
+    uuid: 93dcfe4d-f372-40a3-b482-941c6b667c2b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 285
+      height: 250
+      anchor: center-center

@@ -1,0 +1,22 @@
+uuid: 8a73e31b-e52d-4a41-98d9-4f8bfbb80444
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mine
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mine_messages
+theme: mine
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

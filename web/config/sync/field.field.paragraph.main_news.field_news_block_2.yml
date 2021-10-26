@@ -1,0 +1,31 @@
+uuid: 119bf36e-7fae-4d85-91ca-74a87ac42a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block_small
+    - field.storage.paragraph.field_news_block_2
+    - paragraphs.paragraphs_type.main_news
+  module:
+    - entity_reference_revisions
+id: paragraph.main_news.field_news_block_2
+field_name: field_news_block_2
+entity_type: paragraph
+bundle: main_news
+label: 'news block 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      trending_news_block_small: trending_news_block_small
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference_revisions

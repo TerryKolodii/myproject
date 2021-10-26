@@ -1,0 +1,52 @@
+uuid: 5f1d4317-e5e3-4fbc-928a-b63f36047bfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_news
+    - node.type.page
+    - paragraphs.paragraphs_type.main_news
+  module:
+    - entity_reference_revisions
+id: node.page.field_main_news
+field_name: field_main_news
+entity_type: node
+bundle: page
+label: 'Main news'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      main_news: main_news
+    target_bundles_drag_drop:
+      from_library:
+        weight: 9
+        enabled: false
+      image_text:
+        weight: 11
+        enabled: false
+      images:
+        weight: 10
+        enabled: false
+      main_news:
+        enabled: true
+        weight: 12
+      nested_paragraph:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+      text_image:
+        weight: 15
+        enabled: false
+      user:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+uuid: b1cd9848-7478-4e57-9b24-b7198ed7bade
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:ads_block:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: adsblockright
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+settings:
+  id: 'block_content:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
+  label: 'Ads-block right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

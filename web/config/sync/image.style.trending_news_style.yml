@@ -1,0 +1,15 @@
+uuid: 04aea25b-7c92-4ad8-a7f8-e12b9a7201d1
+langcode: en
+status: true
+dependencies: {  }
+name: trending_news_style
+label: 'Trending news style'
+effects:
+  921f120f-11a2-4fbf-8928-427ba644acc9:
+    uuid: 921f120f-11a2-4fbf-8928-427ba644acc9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 570
+      height: 500
+      anchor: center-center

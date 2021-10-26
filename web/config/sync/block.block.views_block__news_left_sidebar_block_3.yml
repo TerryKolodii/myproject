@@ -1,0 +1,29 @@
+uuid: 11235c5f-b240-402c-a637-ff7b63488ef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_left_sidebar
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__news_left_sidebar_block_3
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:news_left_sidebar-block_3'
+settings:
+  id: 'views_block:news_left_sidebar-block_3'
+  label: Economy
+  provider: views
+  label_display: visible
+  views_label: Economy
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

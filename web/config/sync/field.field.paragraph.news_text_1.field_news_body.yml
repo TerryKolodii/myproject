@@ -1,0 +1,21 @@
+uuid: e6134529-deae-4729-91da-12b925fa65f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_body
+    - paragraphs.paragraphs_type.news_text_1
+  module:
+    - text
+id: paragraph.news_text_1.field_news_body
+field_name: field_news_body
+entity_type: paragraph
+bundle: news_text_1
+label: 'News body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

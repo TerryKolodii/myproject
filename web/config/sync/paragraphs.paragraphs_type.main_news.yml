@@ -1,0 +1,10 @@
+uuid: db903515-632a-4ab2-a3d4-0490306745ef
+langcode: en
+status: true
+dependencies: {  }
+id: main_news
+label: 'Main news'
+icon_uuid: null
+icon_default: null
+description: 'for homepage and categories page'
+behavior_plugins: {  }

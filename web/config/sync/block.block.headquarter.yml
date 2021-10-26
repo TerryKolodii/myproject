@@ -1,0 +1,30 @@
+uuid: 0e49ee9c-2792-424c-9272-fe40c7429ed4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6800409f-a022-497f-85f8-1f178b02f90d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: headquarter
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:6800409f-a022-497f-85f8-1f178b02f90d'
+settings:
+  id: 'block_content:6800409f-a022-497f-85f8-1f178b02f90d'
+  label: HEADQUARTER
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false

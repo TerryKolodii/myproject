@@ -1,0 +1,8 @@
+uuid: ee181b17-96af-4018-9b13-4cb6881dfc9c
+langcode: en
+status: true
+dependencies: {  }
+id: trending_news_block
+label: 'Trending news block'
+revision: 0
+description: 'using at homepage'

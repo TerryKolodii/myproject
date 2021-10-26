@@ -1,0 +1,30 @@
+uuid: 30696b40-7112-4b85-b677-25ea5b4066ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_ads
+field_name: field_ads
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: e0090a18-9059-421c-8182-4ae16f882550
+    alt: ''
+    title: ''
+    width: 728
+    height: 90
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

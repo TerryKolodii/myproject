@@ -1,0 +1,29 @@
+uuid: bb88c726-1d86-4762-9f63-2dc4cd392d06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_relative_news_link_2
+    - node.type.news
+    - paragraphs.paragraphs_type.news_links_you_may_also_like_
+id: paragraph.news_links_you_may_also_like_.field_relative_news_link_2
+field_name: field_relative_news_link_2
+entity_type: paragraph
+bundle: news_links_you_may_also_like_
+label: 'Relative news link 2'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

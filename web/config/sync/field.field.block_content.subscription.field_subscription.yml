@@ -1,0 +1,32 @@
+uuid: f0c8c4e7-4fde-47e1-9249-428f4cafe6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription
+    - field.storage.block_content.field_subscription
+    - webform.webform.subscribe
+  module:
+    - webform
+id: block_content.subscription.field_subscription
+field_name: field_subscription
+entity_type: block_content
+bundle: subscription
+label: Subscription
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 975d3c06-58d8-4130-a4ca-7729c3f68641
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

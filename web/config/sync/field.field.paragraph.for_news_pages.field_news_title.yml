@@ -1,0 +1,21 @@
+uuid: d45e3a1a-08cd-496d-8dd5-9a5c0caa9368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_title
+    - paragraphs.paragraphs_type.for_news_pages
+  module:
+    - text
+id: paragraph.for_news_pages.field_news_title
+field_name: field_news_title
+entity_type: paragraph
+bundle: for_news_pages
+label: news_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

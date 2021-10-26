@@ -1,0 +1,20 @@
+uuid: 761cfd77-78b8-4232-9da4-75a7dcf97e48
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_you_may_also_like_title
+field_name: field_you_may_also_like_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

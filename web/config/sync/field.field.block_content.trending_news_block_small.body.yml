@@ -1,0 +1,23 @@
+uuid: b659fd55-a881-4507-a82b-45d5357ebb80
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block_small
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.trending_news_block_small.body
+field_name: body
+entity_type: block_content
+bundle: trending_news_block_small
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

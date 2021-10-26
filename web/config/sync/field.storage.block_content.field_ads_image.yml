@@ -1,0 +1,30 @@
+uuid: 6b0fc971-9a95-4369-9341-ae0a1e562754
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_ads_image
+field_name: field_ads_image
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 00d98b27-2df7-4c68-b45b-95be11e00315
+    alt: ads-image
+    title: ''
+    width: 728
+    height: 90
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

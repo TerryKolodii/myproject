@@ -1,0 +1,24 @@
+uuid: 2de23053-6592-4a8c-9d67-e4d5f4fcf1c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_you_may_also_like_title
+    - paragraphs.paragraphs_type.news_links_you_may_also_like_
+  module:
+    - text
+id: paragraph.news_links_you_may_also_like_.field_you_may_also_like_title
+field_name: field_you_may_also_like_title
+entity_type: paragraph
+bundle: news_links_you_may_also_like_
+label: you_may_also_like_title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'YOU MAY ALSO LIKE'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,25 @@
+uuid: 71ab4982-d853-4579-8864-3a9f3375bd87
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mine
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: mine_branding
+theme: mine
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

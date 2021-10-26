@@ -1,0 +1,30 @@
+uuid: a7dc71bc-d0c4-40c5-9f4d-8944b0691161
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6800409f-a022-497f-85f8-1f178b02f90d'
+  module:
+    - block_content
+    - system
+  theme:
+    - news
+id: news_headquarter
+theme: news
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:6800409f-a022-497f-85f8-1f178b02f90d'
+settings:
+  id: 'block_content:6800409f-a022-497f-85f8-1f178b02f90d'
+  label: HEADQUARTER
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false

@@ -1,0 +1,25 @@
+uuid: 02533536-7c79-46a1-a1d6-b4060f78db2c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_first_block:8cee170a-45c5-4054-816c-e2dfaf3652fa'
+  module:
+    - block_content
+  theme:
+    - news
+id: news_footerfirstblock
+theme: news
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:8cee170a-45c5-4054-816c-e2dfaf3652fa'
+settings:
+  id: 'block_content:8cee170a-45c5-4054-816c-e2dfaf3652fa'
+  label: 'Footer first block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

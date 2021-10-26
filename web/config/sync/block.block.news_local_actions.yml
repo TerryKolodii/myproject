@@ -1,0 +1,20 @@
+uuid: 5a52ba62-71f4-4d7c-a132-58d5775d1630
+langcode: en
+status: false
+dependencies:
+  theme:
+    - news
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: news_local_actions
+theme: news
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

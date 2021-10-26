@@ -1,0 +1,29 @@
+uuid: 8ff70eae-5ad8-4c79-874e-78cf6c8bcc71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_author
+    - paragraphs.paragraphs_type.for_news_pages
+id: paragraph.for_news_pages.field_news_author
+field_name: field_news_author
+entity_type: paragraph
+bundle: for_news_pages
+label: news_author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

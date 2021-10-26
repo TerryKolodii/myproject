@@ -1,0 +1,20 @@
+uuid: 9843a44c-7ac8-4012-8b8f-6e67d9f43fa7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - user
+id: block_content.field_news_author
+field_name: field_news_author
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

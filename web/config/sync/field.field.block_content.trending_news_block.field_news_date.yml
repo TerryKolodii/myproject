@@ -1,0 +1,24 @@
+uuid: ace82c79-218d-4444-9f6d-7540cef7b0f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.trending_news_block
+    - field.storage.block_content.field_news_date
+  module:
+    - datetime
+id: block_content.trending_news_block.field_news_date
+field_name: field_news_date
+entity_type: block_content
+bundle: trending_news_block
+label: 'news date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

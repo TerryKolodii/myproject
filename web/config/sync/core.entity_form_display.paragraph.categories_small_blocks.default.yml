@@ -1,0 +1,22 @@
+uuid: a4c4acf5-8801-4366-af09-3425ab26cf33
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.categories_small_blocks
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.categories_small_blocks.default
+targetEntityType: paragraph
+bundle: categories_small_blocks
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

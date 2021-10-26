@@ -1,0 +1,21 @@
+uuid: 1fa8ab75-f666-47da-8fbc-5f5f41098e6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slogan
+    - paragraphs.paragraphs_type.for_news_pages
+  module:
+    - text
+id: paragraph.for_news_pages.field_slogan
+field_name: field_slogan
+entity_type: paragraph
+bundle: for_news_pages
+label: slogan
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

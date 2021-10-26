@@ -1,0 +1,10 @@
+uuid: 879bf8f1-d51e-416b-b5fb-ae190e37081f
+langcode: en
+status: true
+dependencies: {  }
+id: categories_small_blocks
+label: 'Categories small blocks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

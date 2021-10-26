@@ -1,0 +1,29 @@
+uuid: 3ae2174b-9a54-465d-a073-7d834b1883c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_left_sidebar
+  module:
+    - system
+    - views
+  theme:
+    - news
+id: news_views_block__news_left_sidebar_block_5
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_left_sidebar-block_5'
+settings:
+  id: 'views_block:news_left_sidebar-block_5'
+  label: 'Evening Report'
+  provider: views
+  label_display: visible
+  views_label: 'Evening Report'
+  items_per_page: '6'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

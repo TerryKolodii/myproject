@@ -1,0 +1,30 @@
+uuid: 37d99ddf-81ae-47fe-9fa8-cb0f9d4cd97f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6453f8c5-f34e-4ad4-83c2-c4076d6f4e75'
+  module:
+    - block_content
+    - system
+  theme:
+    - news
+id: news_getintouch
+theme: news
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:6453f8c5-f34e-4ad4-83c2-c4076d6f4e75'
+settings:
+  id: 'block_content:6453f8c5-f34e-4ad4-83c2-c4076d6f4e75'
+  label: 'Get In Touch'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false

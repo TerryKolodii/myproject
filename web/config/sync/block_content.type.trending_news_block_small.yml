@@ -1,0 +1,8 @@
+uuid: c91f091c-df67-48d6-b8b5-0db2203beb36
+langcode: en
+status: true
+dependencies: {  }
+id: trending_news_block_small
+label: 'Trending news block small'
+revision: 0
+description: 'for homepage'

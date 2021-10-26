@@ -1,0 +1,15 @@
+uuid: d9563f0e-b0e9-4572-93d6-8a86dbcba659
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraph_view_mode
+third_party_settings:
+  paragraph_view_mode:
+    enabled: true
+id: for_news_pages
+label: 'News info + Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

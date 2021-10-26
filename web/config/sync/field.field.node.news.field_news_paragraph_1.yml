@@ -1,0 +1,47 @@
+uuid: 7ea974bb-0da5-4c4c-a26d-d7eb19b2adac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_paragraph_1
+    - node.type.news
+    - paragraphs.paragraphs_type.for_news_pages
+    - paragraphs.paragraphs_type.news_links_you_may_also_like_
+    - paragraphs.paragraphs_type.news_text_1
+  module:
+    - entity_reference_revisions
+id: node.news.field_news_paragraph_1
+field_name: field_news_paragraph_1
+entity_type: node
+bundle: news
+label: 'News paragraph'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      news_links_you_may_also_like_: news_links_you_may_also_like_
+      for_news_pages: for_news_pages
+      news_text_1: news_text_1
+    target_bundles_drag_drop:
+      categories_small_blocks:
+        weight: 6
+        enabled: false
+      for_news_pages:
+        enabled: true
+        weight: 10
+      main_news:
+        weight: 14
+        enabled: false
+      news_links_you_may_also_like_:
+        enabled: true
+        weight: 9
+      news_text_1:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

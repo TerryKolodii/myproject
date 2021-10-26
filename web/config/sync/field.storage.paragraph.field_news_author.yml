@@ -1,0 +1,20 @@
+uuid: f99f8e9b-4b91-402d-b442-0387a3cd0cce
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - user
+id: paragraph.field_news_author
+field_name: field_news_author
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
