@@ -1,5 +1,0 @@
-name: My theme
-type: theme
-core_version_requirement: ^8 || ^9
-description: My really empty theme
-base theme: classy
