@@ -1,6 +1,6 @@
 uuid: 252083a3-3c56-40af-b8df-d865f063ac20
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,7 +8,7 @@ dependencies:
     - news
 id: news_poweredbydrupal
 theme: news
-region: footer_fifth
+region: header
 weight: -10
 provider: null
 plugin: system_powered_by_block

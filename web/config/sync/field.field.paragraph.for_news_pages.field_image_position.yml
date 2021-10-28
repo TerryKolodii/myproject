@@ -1,0 +1,21 @@
+uuid: bee486b3-318c-46d3-bb0d-0bbdf0aa9b92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_position
+    - paragraphs.paragraphs_type.for_news_pages
+  module:
+    - options
+id: paragraph.for_news_pages.field_image_position
+field_name: field_image_position
+entity_type: paragraph
+bundle: for_news_pages
+label: 'image position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

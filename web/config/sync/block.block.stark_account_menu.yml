@@ -1,0 +1,27 @@
+uuid: e9e74f2d-5ee0-4a93-a9f2-8336567164dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: HrZTblWpMF4fo6BdbBcyHEu5Hp9ds1IZF3FiRd2Q8rU
+id: stark_account_menu
+theme: stark
+region: sidebar_first
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }
