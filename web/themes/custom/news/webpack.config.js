@@ -1,17 +1,38 @@
 const path = require('path')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-// const CopyWebpackPlugin = require('copy-webpack-plugin')
+// const CopyWebpackPlugin = require('copy-webpack-plugin') - тре пофіксити (не працює)
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
-console.log('IS DEV:', isDev)
+const isProd = !isDev
+
+const optimization = () => {
+  const config = {
+    splitChumks: {
+      chunks: 'all'
+    }
+  }
+
+  if (isProd) {
+    config.minimizer = [
+      new CssMinimizerWebpackPlugin(),
+      new TerserWebpackPlugin()
+    ]
+  }
+
+  return config
+}
+
+const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: './index.js',
+  entry: ['@babel/polyfill', './index.js'],
   output: {
-    filename: '[name].[contenthash].js',
+    filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
@@ -38,7 +59,7 @@ module.exports = {
     //   }
     // ])
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: filename('css')
     })
   ],
   module: {
@@ -47,13 +68,41 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-              reloadAll: true
-            },
+            loader: MiniCssExtractPlugin.loader
+            // options: {
+            //   hmr: isDev,
+            //   reloadAll: true
+            // },
           },
           'css-loader'
+        ]
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+            // options: {
+            //   hmr: isDev,
+            //   reloadAll: true
+            // },
+          },
+          'css-loader',
+          'less-loader'
+        ]
+      },
+      {
+        test: /s[ac]ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+            // options: {
+            //   hmr: isDev,
+            //   reloadAll: true
+            // },
+          },
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -63,6 +112,19 @@ module.exports = {
       {
         test: /\.(ttf|woff|woff2|eot)$/,
         use: ['file-loader']
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: {
+          presets: [
+            '@babel/preset-env'
+          ],
+          plugins: [
+            '@babel/plugin-proposal-class-properties'
+          ]
+        }
       }
     ]
   }
