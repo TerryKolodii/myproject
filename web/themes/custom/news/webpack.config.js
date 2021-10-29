@@ -30,9 +30,9 @@ const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: ['@babel/polyfill', './index.js'],
+  entry: ['@babel/polyfill', './index.js', './styled/entry.scss', './styled/styles.css'],
   output: {
-    filename: filename('js'),
+    filename: filename('js', 'css'),
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
@@ -78,20 +78,6 @@ module.exports = {
         ]
       },
       {
-        test: /\.less$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-            // options: {
-            //   hmr: isDev,
-            //   reloadAll: true
-            // },
-          },
-          'css-loader',
-          'less-loader'
-        ]
-      },
-      {
         test: /s[ac]ss$/,
         use: [
           {
@@ -120,6 +106,20 @@ module.exports = {
         options: {
           presets: [
             '@babel/preset-env'
+          ],
+          plugins: [
+            '@babel/plugin-proposal-class-properties'
+          ]
+        }
+      },
+      {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: {
+          presets: [
+            '@babel/preset-env',
+            '@babel/preset-typescript'
           ],
           plugins: [
             '@babel/plugin-proposal-class-properties'
