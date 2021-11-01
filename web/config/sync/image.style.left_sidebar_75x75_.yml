@@ -1,0 +1,15 @@
+uuid: d792bbe0-ea9f-4b21-ba7e-5fcf68379afb
+langcode: en
+status: true
+dependencies: {  }
+name: left_sidebar_75x75_
+label: 'Left sidebar (75x75)'
+effects:
+  07859988-996d-460e-84da-8f0e70b64e06:
+    uuid: 07859988-996d-460e-84da-8f0e70b64e06
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 75
+      height: 75
+      anchor: center-center

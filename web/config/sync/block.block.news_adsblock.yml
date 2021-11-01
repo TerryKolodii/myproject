@@ -12,7 +12,7 @@ dependencies:
 id: news_adsblock
 theme: news
 region: content
-weight: -10
+weight: -13
 provider: null
 plugin: 'block_content:739ec747-8676-4fe9-b2cd-6a9f819b61ed'
 settings:
