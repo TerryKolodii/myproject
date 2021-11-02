@@ -1,0 +1,55 @@
+uuid: 62dd23b2-f249-4a70-995d-98244373f2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links_block
+    - field.field.block_content.social_links_block.body
+    - field.field.block_content.social_links_block.field_social_links
+  module:
+    - field_layout
+    - layout_discovery
+    - social_media_links_field
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: block_content.social_links_block.default
+targetEntityType: block_content
+bundle: social_links_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_social_links:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

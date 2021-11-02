@@ -1,0 +1,223 @@
+uuid: 244cc3c7-5e1c-4d6e-bdc1-01ed2b6f7320
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_links_block
+    - field.storage.block_content.field_social_links
+  module:
+    - social_media_links_field
+id: block_content.social_links_block.field_social_links
+field_name: field_social_links
+entity_type: block_content
+bundle: social_links_block
+label: 'Social links'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    platform: null
+    value: null
+    platform_values:
+      drupal:
+        value: ''
+      tumblr:
+        value: ''
+      whatsapp:
+        value: ''
+      email:
+        value: ''
+      googleplus:
+        value: ''
+      vkontakte:
+        value: ''
+      rss:
+        value: ''
+      xing:
+        value: ''
+      pinterest:
+        value: ''
+      behance:
+        value: ''
+      youtube_channel:
+        value: ''
+      github:
+        value: ''
+      contact:
+        value: ''
+      facebook:
+        value: ''
+      twitter:
+        value: ''
+      gitlab:
+        value: ''
+      website:
+        value: ''
+      vimeo:
+        value: ''
+      slideshare:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: ''
+      linkedin:
+        value: ''
+      bitbucket:
+        value: ''
+      flickr:
+        value: ''
+  -
+    platform: null
+    value: null
+    platform_values:
+      drupal:
+        value: ''
+      tumblr:
+        value: ''
+      whatsapp:
+        value: ''
+      email:
+        value: ''
+      googleplus:
+        value: ''
+      vkontakte:
+        value: ''
+      rss:
+        value: ''
+      xing:
+        value: ''
+      pinterest:
+        value: ''
+      behance:
+        value: ''
+      youtube_channel:
+        value: ''
+      github:
+        value: ''
+      contact:
+        value: ''
+      facebook:
+        value: ''
+      twitter:
+        value: ''
+      gitlab:
+        value: ''
+      website:
+        value: ''
+      vimeo:
+        value: ''
+      slideshare:
+        value: ''
+      youtube:
+        value: ''
+      instagram:
+        value: ''
+      linkedin:
+        value: ''
+      bitbucket:
+        value: ''
+      flickr:
+        value: ''
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    drupal:
+      description: ''
+      weight: '-10'
+      enabled: 0
+    contact:
+      description: ''
+      weight: '-9'
+      enabled: 0
+    bitbucket:
+      description: ''
+      weight: '-8'
+      enabled: 0
+    linkedin:
+      enabled: '1'
+      description: ''
+      weight: '-7'
+    instagram:
+      description: ''
+      weight: '-6'
+      enabled: 0
+    youtube:
+      enabled: '1'
+      description: ''
+      weight: '-5'
+    slideshare:
+      description: ''
+      weight: '-4'
+      enabled: 0
+    vimeo:
+      description: ''
+      weight: '-3'
+      enabled: 0
+    website:
+      description: ''
+      weight: '-2'
+      enabled: 0
+    gitlab:
+      description: ''
+      weight: '-1'
+      enabled: 0
+    twitter:
+      enabled: '1'
+      description: ''
+      weight: '0'
+    facebook:
+      enabled: '1'
+      description: ''
+      weight: '1'
+    github:
+      description: ''
+      weight: '2'
+      enabled: 0
+    tumblr:
+      description: ''
+      weight: '3'
+      enabled: 0
+    youtube_channel:
+      description: ''
+      weight: '4'
+      enabled: 0
+    behance:
+      description: ''
+      weight: '5'
+      enabled: 0
+    pinterest:
+      description: ''
+      weight: '6'
+      enabled: 0
+    xing:
+      description: ''
+      weight: '7'
+      enabled: 0
+    rss:
+      enabled: '1'
+      description: ''
+      weight: '8'
+    vkontakte:
+      description: ''
+      weight: '9'
+      enabled: 0
+    googleplus:
+      description: ''
+      weight: '10'
+      enabled: 0
+    email:
+      description: ''
+      weight: '11'
+      enabled: 0
+    whatsapp:
+      description: ''
+      weight: '12'
+      enabled: 0
+    flickr:
+      description: ''
+      weight: '13'
+      enabled: 0
+field_type: social_media_links_field

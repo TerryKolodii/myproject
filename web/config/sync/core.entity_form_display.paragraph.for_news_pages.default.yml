@@ -9,14 +9,12 @@ dependencies:
     - field.field.paragraph.for_news_pages.field_news_image
     - field.field.paragraph.for_news_pages.field_news_title
     - field.field.paragraph.for_news_pages.field_slogan
-    - field.field.paragraph.for_news_pages.paragraph_view_mode
     - image.style.thumbnail
     - paragraphs.paragraphs_type.for_news_pages
   module:
     - field_layout
     - image
     - layout_discovery
-    - paragraph_view_mode
     - text
 third_party_settings:
   field_layout:
@@ -29,13 +27,13 @@ bundle: for_news_pages
 mode: default
 content:
   field_image_position:
-    weight: 5
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_news_author:
-    weight: 3
+    weight: 5
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -45,7 +43,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_news_category:
-    weight: 4
+    weight: 6
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -55,7 +53,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_news_image:
-    weight: 0
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -63,7 +61,7 @@ content:
     type: image_image
     region: content
   field_news_title:
-    weight: 1
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -71,23 +69,12 @@ content:
     type: text_textfield
     region: content
   field_slogan:
-    weight: 2
+    weight: 4
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
-    region: content
-  paragraph_view_mode:
-    type: paragraph_view_mode
-    weight: -100
-    settings:
-      view_modes:
-        image_right_text_right: image_right_text_right
-        preview: preview
-        default: '0'
-      default_view_mode: image_right_text_right
-    third_party_settings: {  }
     region: content
 hidden:
   created: true

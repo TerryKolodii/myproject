@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:news_left_sidebar-block_2'
 settings:
   id: 'views_block:news_left_sidebar-block_2'
-  label: ''
+  label: 'Popular news'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Popular news'
   items_per_page: '5'
 visibility:
   request_path:

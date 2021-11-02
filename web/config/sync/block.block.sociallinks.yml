@@ -1,0 +1,30 @@
+uuid: 60a9d5c8-21a9-4898-8cb2-abb824994bf0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_links_block:0df09dda-bc1a-4fde-bad5-b20575bc8dc0'
+  module:
+    - block_content
+    - system
+  theme:
+    - news
+id: sociallinks
+theme: news
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:0df09dda-bc1a-4fde-bad5-b20575bc8dc0'
+settings:
+  id: 'block_content:0df09dda-bc1a-4fde-bad5-b20575bc8dc0'
+  label: 'Social links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

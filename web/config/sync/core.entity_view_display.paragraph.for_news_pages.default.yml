@@ -9,7 +9,6 @@ dependencies:
     - field.field.paragraph.for_news_pages.field_news_image
     - field.field.paragraph.for_news_pages.field_news_title
     - field.field.paragraph.for_news_pages.field_slogan
-    - field.field.paragraph.for_news_pages.paragraph_view_mode
     - paragraphs.paragraphs_type.for_news_pages
   module:
     - image
@@ -22,7 +21,7 @@ mode: default
 content:
   field_image_position:
     weight: 5
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
@@ -67,5 +66,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  paragraph_view_mode: true
   search_api_excerpt: true

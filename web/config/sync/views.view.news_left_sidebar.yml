@@ -577,8 +577,8 @@ display:
         options:
           default_field_elements: true
           inline:
-            field_news_image: field_news_image
             title: title
+            field_image: field_image
           separator: ''
           hide_empty: false
     cache_metadata:

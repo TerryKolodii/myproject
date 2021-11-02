@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/ctools": "^3.7",
+        "drupal/devel": "^4.1",
         "drupal/imce": "^2.4",
         "drush/drush": "^10.2"
     },
@@ -85,5 +86,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.3"
     }
 }

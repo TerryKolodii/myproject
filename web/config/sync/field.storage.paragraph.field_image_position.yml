@@ -13,10 +13,10 @@ settings:
   allowed_values:
     -
       value: !!float 0
-      label: 'Image right, text left'
+      label: 'Image right'
     -
       value: !!float 1
-      label: 'Image left, text right'
+      label: 'Image left'
   allowed_values_function: ''
 module: options
 locked: false

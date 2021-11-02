@@ -16,9 +16,9 @@ provider: null
 plugin: 'views_block:news_left_sidebar-block_1'
 settings:
   id: 'views_block:news_left_sidebar-block_1'
-  label: ''
+  label: Latest
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: Latest
   items_per_page: none
 visibility: {  }

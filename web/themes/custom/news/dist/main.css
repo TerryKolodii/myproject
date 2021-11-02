@@ -8,16 +8,8 @@
 .layout-container {
   max-width: 100%; }
 
-#block-sitebranding img {
-  vertical-align: middle; }
-
 .search-block-form {
   display: none; }
-
-#content {
-  width: 50%;
-  margin-right: 25%;
-  margin-left: 25%; }
 
 #block-news-adsblock {
   height: 90px;
@@ -32,9 +24,9 @@
   #block-views-block-news-left-sidebar-block-6 h2 {
     display: block;
     text-align: center;
-    vertical-align: middle;
     width: 100px;
     height: 40px;
+    line-height: 40px;
     background-color: #3d348b;
     font-size: 11px;
     font-weight: bold;
@@ -42,7 +34,10 @@
     font-family: Heebo,Helvetica,Arial,sans-serif; }
 
 .region-primary-menu {
+  height: 60px;
   background-image: linear-gradient(0deg, #e2e2e2 0%, white 75%); }
+  .region-primary-menu nav {
+    display: inline-block; }
   .region-primary-menu .menu a {
     padding: 19px 22px 19px 0;
     font-size: 15px;
@@ -53,12 +48,35 @@
     background: none;
     color: #3d348b; }
 
+#block-sociallinks {
+  line-height: 3;
+  display: inline-block; }
+  #block-sociallinks ul {
+    line-height: 1.5;
+    height: 60px;
+    line-height: 60px; }
+  #block-sociallinks li {
+    display: inline-block;
+    margin: 0 20px 15px 0; }
+
+.fa-2x {
+  font-size: 1.3em; }
+
+#content {
+  width: 61%;
+  margin-right: 19.5%;
+  margin-left: 19.5%; }
+
 #sidebar-first {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
   width: 18%; }
   #sidebar-first a {
     font-size: 17px; }
 
 #sidebar-second {
+  margin-left: -18%;
   width: 18%; }
   #sidebar-second a {
     font-size: 17px; }
@@ -88,6 +106,9 @@ a, .link {
 .site-footer__top .region {
   width: 32%;
   padding: 0 0.65%; }
+
+#block-news-views-block-news-left-sidebar-block-3 {
+  width: 66.66666667%; }
 
 /*!**********************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!./styled/styles.css ***!

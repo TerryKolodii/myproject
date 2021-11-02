@@ -6,7 +6,7 @@ dependencies:
     - paragraph_view_mode
 third_party_settings:
   paragraph_view_mode:
-    enabled: true
+    enabled: false
 id: for_news_pages
 label: 'News info + Image'
 icon_uuid: null

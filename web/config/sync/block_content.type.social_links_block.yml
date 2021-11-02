@@ -1,0 +1,8 @@
+uuid: c4919d8c-3ee2-403d-8411-ff7500137d08
+langcode: en
+status: true
+dependencies: {  }
+id: social_links_block
+label: 'Social links block'
+revision: 0
+description: ''
