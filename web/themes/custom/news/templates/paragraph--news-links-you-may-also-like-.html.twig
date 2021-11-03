@@ -48,45 +48,19 @@
 %}
 
 {% block paragraph %}
-  <div class="news-paragraph">
+  <div class="relative-news-paragraph">
     {% block content %}
-      {% if content.field_image_position['#items'].getString() =='1' %}
-        <div class="left-group">
-          {{ content.field_news_image }}
+      <div class="paragraph-label">
+        {{ content.field_you_may_also_like_title }}
+      </div>
+      <div class="relative-links">
+        <div class="relative-link-1">
+          {{ content.field_relative_news }}
         </div>
-        <div class="right-group">
-          {{ content.field_news_title }}
-          {{ content.field_news_author }}
-          {{ content.field_news_category }}
-          {{ content.field_slogan }}
+        <div class="relative-link-2">
+          {{ content.field_relative_news_link_2 }}
         </div>
-      {% else %}
-        <div class="left-group">
-          {{ content.field_news_title }}
-          {{ content.field_news_author }}
-          {{ content.field_news_category }}
-          {{ content.field_slogan }}
-        </div>
-        <div class="right-group">
-          {{ content.field_news_image }}
-        </div>
-      {% endif %}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
-
-
-
-{#{% block paragraph %}#}
-{#  <div{{ attributes.addClass(classes) }}>#}
-{#    {% block content %}#}
-{#      {% if content.field_image_position == image_right %}#}
-{#        {{ content.field_news_title }}#}
-{#        {{ content.field_news_image }}#}
-{#      {% else %}#}
-{#        {{ content.field_news_image }}#}
-{#        {{ content.field_news_title }}#}
-{#      {% endif %}#}
-{#    {% endblock %}#}
-{#  </div>#}
-{#{% endblock paragraph %}#}
