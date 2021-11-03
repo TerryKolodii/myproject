@@ -177,6 +177,122 @@ a, .link {
   }
 }
 
+.node .field--type-image {
+  margin: 0;
+}
+
+.homepage-paragraph {
+  height: 500px;
+  .field--name-field-news-block-1 {
+    height: 500px;
+    position: relative;
+
+    .field--name-field-news-category {
+      position: absolute;
+      top: 0;
+      left: 25px;
+      background: #3d348b;
+      padding: 0 12px;
+
+      a {
+        color: white;
+      }
+    }
+
+    .field--name-field-news-reference {
+      position: absolute;
+      bottom: 10%;
+      padding: 0 20px;
+
+      a {
+        font-weight: bold;
+        font-size: 26px;
+        color: #fff;
+      }
+    }
+
+    .field--name-field-news-author {
+      position: absolute;
+      bottom: 4%;
+      padding: 0 20px;
+
+      a {
+        font-weight: bold;
+        font-size: 11px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+
+    .field--name-field-news-date {
+      position: absolute;
+      bottom: 4%;
+      left: 20%;
+      padding: 0 20px;
+
+      time {
+        font-size: 11px;
+        color: #fff;
+      }
+    }
+
+    .field--type-image img {
+      margin: 0 auto;
+    }
+  }
+  .field--name-field-news-block-2, .field--name-field-news-block-3 {
+    height: 500px;
+    position: relative;
+
+    > .field__item {
+      height: 50%;
+      position: relative;
+      margin: 0 auto;
+
+      .field--name-field-news-category {
+        position: absolute;
+        top: 0;
+        left: 18px;
+        background: #3d348b;
+        padding: 0 12px;
+
+        a {
+          color: white;
+        }
+      }
+
+      .field--name-field-news-reference {
+        position: absolute;
+        bottom: 10%;
+        padding: 0 20px;
+
+        a {
+          font-weight: bold;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+
+      .field--name-field-news-date {
+        position: absolute;
+        bottom: 6%;
+        padding: 0 20px;
+
+        time {
+          font-size: 10px;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+
+      .field--type-image img {
+        margin: 0 auto;
+        top: 0;
+      }
+    }
+  }
+}
+
 .relative-news-paragraph {
   .relative-links {
     padding: 15px 0;
