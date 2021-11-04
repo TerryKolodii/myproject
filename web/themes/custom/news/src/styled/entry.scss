@@ -166,14 +166,9 @@ a, .link {
 }
 
 .homepage-paragraph {
-  .first-group, .second-group, .third-group {
-    display: inline-block;
-  }
-  .first-group {
-    width: 49%;
-  }
-  .second-group, .third-group {
-    width: 24.5%;
+  display: flex;
+  .first-group, .second-group {
+    width: 50%;
   }
 }
 
@@ -182,40 +177,31 @@ a, .link {
 }
 
 .homepage-paragraph {
-  height: 500px;
   .field--name-field-news-block-1 {
-    height: 500px;
+    height: auto;
     position: relative;
-
     .field--name-field-news-category {
       position: absolute;
       top: 0;
       left: 25px;
       background: #3d348b;
       padding: 0 12px;
-
       a {
         color: white;
       }
     }
-
     .field--name-field-news-reference {
       position: absolute;
-      bottom: 10%;
-      padding: 0 20px;
-
+      margin: 60% 5% 0;
       a {
         font-weight: bold;
         font-size: 26px;
         color: #fff;
       }
     }
-
     .field--name-field-news-author {
       position: absolute;
-      bottom: 4%;
-      padding: 0 20px;
-
+      margin: 77% 5% 0;
       a {
         font-weight: bold;
         font-size: 11px;
@@ -223,71 +209,68 @@ a, .link {
         text-transform: uppercase;
       }
     }
-
     .field--name-field-news-date {
       position: absolute;
       bottom: 4%;
       left: 20%;
       padding: 0 20px;
-
       time {
         font-size: 11px;
         color: #fff;
       }
     }
-
-    .field--type-image img {
-      margin: 0 auto;
+    .field--type-image {
+      a {
+        font-size: 0;
+        img {
+          margin: 0 auto;
+        }
+      }
     }
   }
-  .field--name-field-news-block-2, .field--name-field-news-block-3 {
-    height: 500px;
+  .field--name-field-news-block-2 {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
-    > .field__item {
-      height: 50%;
+    >.field__item {
       position: relative;
-      margin: 0 auto;
-
+      width: 50%;
       .field--name-field-news-category {
         position: absolute;
         top: 0;
         left: 18px;
         background: #3d348b;
         padding: 0 12px;
-
         a {
           color: white;
         }
       }
-
       .field--name-field-news-reference {
         position: absolute;
         bottom: 10%;
         padding: 0 20px;
-
         a {
           font-weight: bold;
           font-size: 18px;
           color: #fff;
         }
       }
-
       .field--name-field-news-date {
         position: absolute;
         bottom: 6%;
         padding: 0 20px;
-
         time {
           font-size: 10px;
           font-weight: bold;
           color: #fff;
         }
       }
-
-      .field--type-image img {
-        margin: 0 auto;
-        top: 0;
+      .field--type-image {
+        img {
+          margin: 0 auto;
+          top: 0;
+        }
       }
     }
   }

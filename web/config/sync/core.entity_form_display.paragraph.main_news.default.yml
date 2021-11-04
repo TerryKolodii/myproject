@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.main_news.field_news_block_1
     - field.field.paragraph.main_news.field_news_block_2
-    - field.field.paragraph.main_news.field_news_block_3
     - paragraphs.paragraphs_type.main_news
   module:
     - entity_reference_revisions
@@ -33,16 +32,6 @@ content:
     region: content
   field_news_block_2:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_autocomplete
-    region: content
-  field_news_block_3:
-    weight: 2
     settings:
       match_operator: CONTAINS
       match_limit: 10
