@@ -7,36 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "./Post.js":
-/*!*****************!*\
-  !*** ./Post.js ***!
-  \*****************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Post)\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Post = /*#__PURE__*/function () {\n  function Post(title, img) {\n    _classCallCheck(this, Post);\n\n    this.title = title;\n    this.img = img;\n    this.dare = new Date();\n  }\n\n  _createClass(Post, [{\n    key: \"toString\",\n    value: function toString() {\n      return JSON.stringify({\n        title: this.title,\n        date: this.date.toJSON(),\n        img: this.img\n      });\n    }\n  }, {\n    key: \"uppercaseTitle\",\n    get: function get() {\n      return this.title.toUpperCase();\n    }\n  }]);\n\n  return Post;\n}();\n\n\n\n//# sourceURL=webpack:///./Post.js?");
-
-/***/ }),
 
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post */ \"./Post.js\");\n/* harmony import */ var _assets_json_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/json.json */ \"./assets/json.json\");\n/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/webpack-logo.png */ \"./assets/webpack-logo.png\");\n\n\n // import './styled/styles.css'\n// import './styled/scss.scss'\n\nvar post = new _Post__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('Webpack Post Title', _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nconsole.log('Post to String:', post.toString());\nconsole.log('JSON:', _assets_json_json__WEBPACK_IMPORTED_MODULE_1__);\n\nvar sample = function sample() {\n  console.log(111564);\n};\n\n//# sourceURL=webpack:///./index.js?");
-
-/***/ }),
-
-/***/ "./assets/webpack-logo.png":
-/*!*********************************!*\
-  !*** ./assets/webpack-logo.png ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"47692505d122dbcae490be2492a60b2e.png\");\n\n//# sourceURL=webpack:///./assets/webpack-logo.png?");
+eval("function openNewsList(evt, newsListName) {\n  // Declare all variables\n  var i, tabcontent, tablinks; // Get all elements with class=\"tabcontent\" and hide them\n\n  tabcontent = document.getElementsByClassName(\"tabcontent\");\n\n  for (i = 0; i < tabcontent.length; i++) {\n    tabcontent[i].style.display = \"none\";\n  } // Get all elements with class=\"tablinks\" and remove the class \"active\"\n\n\n  tablinks = document.getElementsByClassName(\"tablinks\");\n\n  for (i = 0; i < tablinks.length; i++) {\n    tablinks[i].className = tablinks[i].className.replace(\" active\", \"\");\n  } // Show the current tab, and add an \"active\" class to the button that opened the tab\n\n\n  document.getElementById(newsListName).style.display = \"block\";\n  evt.currentTarget.className += \" active\";\n}\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -46,6 +25,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styled/entry.scss?");
 
 /***/ }),
@@ -56,17 +36,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./styled/styles.css?");
-
-/***/ }),
-
-/***/ "./assets/json.json":
-/*!**************************!*\
-  !*** ./assets/json.json ***!
-  \**************************/
-/***/ ((module) => {
-
-eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sourceURL=webpack:///./assets/json.json?");
 
 /***/ })
 
@@ -132,30 +103,6 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sou
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -170,26 +117,6 @@ eval("module.exports = JSON.parse('{\"title\":\"I am JSON title\"}');\n\n//# sou
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

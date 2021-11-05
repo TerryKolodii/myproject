@@ -1,4 +1,4 @@
-uuid: d2da624f-943b-4d68-9f9a-21de4e8c102b
+uuid: 10e9006b-b356-43c5-ad31-4dbdfbef89bc
 langcode: en
 status: true
 dependencies:
@@ -8,20 +8,20 @@ dependencies:
     - system
     - views
   theme:
-    - bartik
-id: views_block__news_left_sidebar_block_4
-theme: bartik
+    - news
+id: views_block__news_left_sidebar_block_7
+theme: news
 region: content
-weight: -6
+weight: -8
 provider: null
-plugin: 'views_block:news_left_sidebar-block_4'
+plugin: 'views_block:news_left_sidebar-block_7'
 settings:
-  id: 'views_block:news_left_sidebar-block_4'
+  id: 'views_block:news_left_sidebar-block_7'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
-  items_per_page: '3'
+  items_per_page: none
 visibility:
   request_path:
     id: request_path
