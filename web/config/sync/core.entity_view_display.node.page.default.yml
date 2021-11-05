@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_editor_picks_news
     - field.field.node.page.field_main_news
     - node.type.page
   module:
@@ -24,6 +25,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_editor_picks_news:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_main_news:
     type: entity_reference_revisions_entity_view
     weight: 0

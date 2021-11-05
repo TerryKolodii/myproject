@@ -1,0 +1,87 @@
+uuid: 448ae2a9-8a50-4cd7-b24b-aedde8f3dbf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editor_picks_large.field_news
+    - field.field.paragraph.editor_picks_large.field_news_author
+    - field.field.paragraph.editor_picks_large.field_news_category
+    - field.field.paragraph.editor_picks_large.field_news_date
+    - field.field.paragraph.editor_picks_large.field_news_image
+    - field.field.paragraph.editor_picks_large.field_news_short_description
+    - field.field.paragraph.editor_picks_large.field_read_more_button
+    - image.style.editor_picks_large_340x170_
+    - paragraphs.paragraphs_type.editor_picks_large
+  module:
+    - datetime
+    - image
+    - link
+    - text
+id: paragraph.editor_picks_large.default
+targetEntityType: paragraph
+bundle: editor_picks_large
+mode: default
+content:
+  field_news:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_news_author:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_news_category:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_news_date:
+    weight: 4
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_news_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: editor_picks_large_340x170_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_news_short_description:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_read_more_button:
+    weight: 6
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  search_api_excerpt: true

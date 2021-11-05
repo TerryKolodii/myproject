@@ -1,0 +1,20 @@
+uuid: 2f2b90b1-ee22-4059-a78b-5704e9e0b045
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_editor_picks_left
+field_name: field_editor_picks_left
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

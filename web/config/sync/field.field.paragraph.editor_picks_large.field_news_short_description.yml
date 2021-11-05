@@ -1,0 +1,24 @@
+uuid: 85d57f92-0b1c-4f64-9458-1bf0ac250007
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_short_description
+    - paragraphs.paragraphs_type.editor_picks_large
+  module:
+    - text
+id: paragraph.editor_picks_large.field_news_short_description
+field_name: field_news_short_description
+entity_type: paragraph
+bundle: editor_picks_large
+label: 'news short description'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Goodness sedulous physically impotent lazy since crud when pangolin promiscuously or amid pounded fa'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

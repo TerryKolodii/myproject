@@ -1,0 +1,63 @@
+uuid: 493b48ac-a876-471e-9659-51be7abbc344
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editor_picks_small.field_news
+    - field.field.paragraph.editor_picks_small.field_news_date
+    - field.field.paragraph.editor_picks_small.field_news_image
+    - image.style.editor_picks_large_120x86_
+    - paragraphs.paragraphs_type.editor_picks_small
+  module:
+    - datetime
+    - ds
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol_section
+      library: layout_builder/twocol_section
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        column_widths: 50-50
+    regions:
+      first:
+        - field_news_image
+      second:
+        - field_news
+        - field_news_date
+id: paragraph.editor_picks_small.default
+targetEntityType: paragraph
+bundle: editor_picks_small
+mode: default
+content:
+  field_news:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: second
+  field_news_date:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: second
+  field_news_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: editor_picks_large_120x86_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: first
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,24 @@
+uuid: 4f4f481f-5f0d-42c3-8f89-83020d065a3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_date
+    - paragraphs.paragraphs_type.editor_picks_large
+  module:
+    - datetime
+id: paragraph.editor_picks_large.field_news_date
+field_name: field_news_date
+entity_type: paragraph
+bundle: editor_picks_large
+label: news_date
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
