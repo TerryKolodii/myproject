@@ -12,18 +12,19 @@ dependencies:
 id: views_block__editor_picks_news_block_1
 theme: news
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:editor_picks_news-block_1'
 settings:
   id: 'views_block:editor_picks_news-block_1'
-  label: ''
+  label: 'Editor Picks'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Editor Picks'
   items_per_page: none
+  pager: some
 visibility:
   request_path:
     id: request_path
-    pages: '<front> '
+    pages: '<front>'
     negate: false

@@ -35,7 +35,7 @@ mode: default
 content:
   field_news:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -43,7 +43,7 @@ content:
     region: second
   field_news_date:
     weight: 2
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -52,7 +52,7 @@ content:
     region: second
   field_news_image:
     weight: 0
-    label: above
+    label: hidden
     settings:
       image_style: editor_picks_large_120x86_
       image_link: ''
