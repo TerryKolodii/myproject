@@ -64,7 +64,7 @@ display:
             delay: '0'
             sync: 1
             random: 0
-            pause: 0
+            pause: 1
             pause_on_click: 0
             action_advanced: 0
             start_paused: 0
