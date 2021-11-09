@@ -1,0 +1,15 @@
+uuid: 0f543788-26f1-4102-ae13-6e3f49e03610
+langcode: en
+status: true
+dependencies: {  }
+name: right_sidebar_320x229_
+label: 'Right sidebar (320x229)'
+effects:
+  3cfc9f4c-59a5-4869-b2ea-cf850d89b0d2:
+    uuid: 3cfc9f4c-59a5-4869-b2ea-cf850d89b0d2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 229
+      anchor: center-center

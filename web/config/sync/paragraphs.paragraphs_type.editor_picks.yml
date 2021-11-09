@@ -1,0 +1,18 @@
+uuid: d569e48d-904b-44f1-9417-cfd707c61250
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraph_view_mode
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  paragraph_view_mode:
+    enabled: false
+id: editor_picks
+label: 'Editor PIcks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,27 +1,28 @@
-uuid: cf30f737-aab2-4590-acac-354a3d9ff712
+uuid: ce3dfa74-95d9-43ea-b35f-428c7bcee3db
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_left_sidebar
+    - views.view.editor_picks_news
   module:
     - system
     - views
   theme:
     - news
-id: views_block__news_left_sidebar_block_6
+id: views_block__editor_picks_news_block_1
 theme: news
 region: content
-weight: -13
+weight: -8
 provider: null
-plugin: 'views_block:news_left_sidebar-block_6'
+plugin: 'views_block:editor_picks_news-block_1'
 settings:
-  id: 'views_block:news_left_sidebar-block_6'
-  label: TRENDING
+  id: 'views_block:editor_picks_news-block_1'
+  label: 'Editor Picks'
   provider: views
   label_display: visible
-  views_label: TRENDING
+  views_label: 'Editor Picks'
   items_per_page: none
+  pager: some
 visibility:
   request_path:
     id: request_path

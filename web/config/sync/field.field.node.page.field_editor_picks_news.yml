@@ -1,0 +1,23 @@
+uuid: baee38b0-5567-4427-a31b-6827d7a191c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editor_picks_news
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_editor_picks_news
+field_name: field_editor_picks_news
+entity_type: node
+bundle: page
+label: 'Editor PIcks News'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

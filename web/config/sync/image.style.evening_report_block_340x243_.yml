@@ -1,0 +1,15 @@
+uuid: b23f90c8-33b0-4d02-b350-7ec26930db70
+langcode: en
+status: true
+dependencies: {  }
+name: evening_report_block_340x243_
+label: 'Evening Report block [340x243]'
+effects:
+  c4b5a952-ecb9-40f8-b3c0-a5607d42a615:
+    uuid: c4b5a952-ecb9-40f8-b3c0-a5607d42a615
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 243
+      anchor: center-center

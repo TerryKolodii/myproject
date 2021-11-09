@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_editor_picks_news
     - field.field.node.page.field_main_news
     - node.type.page
   module:
@@ -29,6 +30,7 @@ content:
     weight: 101
     region: content
 hidden:
+  field_editor_picks_news: true
   field_main_news: true
   langcode: true
   search_api_excerpt: true

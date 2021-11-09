@@ -1,0 +1,94 @@
+uuid: 4c73e20f-3a75-4906-99b0-a88feba9464b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editor_picks_large.field_news
+    - field.field.paragraph.editor_picks_large.field_news_author
+    - field.field.paragraph.editor_picks_large.field_news_category
+    - field.field.paragraph.editor_picks_large.field_news_date
+    - field.field.paragraph.editor_picks_large.field_news_image
+    - field.field.paragraph.editor_picks_large.field_news_short_description
+    - field.field.paragraph.editor_picks_large.field_read_more_button
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.editor_picks_large
+  module:
+    - datetime
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.editor_picks_large.default
+targetEntityType: paragraph
+bundle: editor_picks_large
+mode: default
+content:
+  field_news:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_author:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_category:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_news_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_news_short_description:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_read_more_button:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,15 @@
+uuid: a40e2b6c-b091-4224-92a6-eec78a11c90a
+langcode: en
+status: true
+dependencies: {  }
+name: editor_picks_large_340x170_
+label: 'Editor-picks-Large (340x170)'
+effects:
+  2fcee067-7ffc-4c28-9a35-4c042fbb6719:
+    uuid: 2fcee067-7ffc-4c28-9a35-4c042fbb6719
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 340
+      height: 170
+      anchor: center-center

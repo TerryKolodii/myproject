@@ -1,4 +1,4 @@
-uuid: ee383d53-bb5c-4dd6-8a4a-22d45bdb8c38
+uuid: 10e9006b-b356-43c5-ad31-4dbdfbef89bc
 langcode: en
 status: true
 dependencies:
@@ -9,19 +9,19 @@ dependencies:
     - views
   theme:
     - news
-id: news_views_block__news_left_sidebar_block_4
+id: views_block__news_left_sidebar_block_7
 theme: news
 region: content
-weight: -8
+weight: -9
 provider: null
-plugin: 'views_block:news_left_sidebar-block_4'
+plugin: 'views_block:news_left_sidebar-block_7'
 settings:
-  id: 'views_block:news_left_sidebar-block_4'
+  id: 'views_block:news_left_sidebar-block_7'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
-  items_per_page: '3'
+  items_per_page: none
 visibility:
   request_path:
     id: request_path

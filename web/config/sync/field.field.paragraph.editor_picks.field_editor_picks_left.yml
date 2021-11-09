@@ -1,0 +1,52 @@
+uuid: 73664887-4a39-4013-9cd5-3e105407972f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_editor_picks_left
+    - paragraphs.paragraphs_type.editor_picks
+    - paragraphs.paragraphs_type.editor_picks_large
+  module:
+    - entity_reference_revisions
+id: paragraph.editor_picks.field_editor_picks_left
+field_name: field_editor_picks_left
+entity_type: paragraph
+bundle: editor_picks
+label: 'Editor PIcks Left'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      editor_picks_large: editor_picks_large
+    target_bundles_drag_drop:
+      categories_small_blocks:
+        weight: 9
+        enabled: false
+      editor_picks:
+        weight: 10
+        enabled: false
+      editor_picks_large:
+        enabled: true
+        weight: 11
+      editor_picks_small:
+        weight: 12
+        enabled: false
+      for_news_pages:
+        weight: 13
+        enabled: false
+      main_news:
+        weight: 14
+        enabled: false
+      news_links_you_may_also_like_:
+        weight: 15
+        enabled: false
+      news_text_1:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

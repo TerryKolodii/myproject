@@ -1,0 +1,15 @@
+uuid: e5403ae0-02cf-4093-be3e-080bea287c98
+langcode: en
+status: true
+dependencies: {  }
+name: government_economy_blocks_210x150_
+label: 'Government-Economy blocks (300x150)'
+effects:
+  f4e2a88e-17f4-42c9-8879-3d6258abb120:
+    uuid: f4e2a88e-17f4-42c9-8879-3d6258abb120
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 150
+      anchor: center-center
