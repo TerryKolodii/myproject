@@ -1,3 +1,4 @@
+//General
 #page, #main-wrapper, .region-primary-menu .menu-item a.is-active,
 .region-primary-menu .menu-item--active-trail a {
   background-color: #f5f5f5;
@@ -5,22 +6,43 @@
 
 .layout-container {
   max-width: 100%;
-}
+  #content {
+    width: 61%;
+    margin-right: 19.5%;
+    margin-left: 19.5%;
+  }
+  .sidebar {
+    .section {
+      padding: 0;
+    }
 
-.search-block-form {
-  display: none;
-}
-
-#block-news-adsblock {
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  img {
-    vertical-align: middle;
+    .block {
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+  .site-footer__top .region {
+    width: 32%;
+    padding: 0 0.65%;
+  }
+  .node .field--type-image {
+    margin: 0;
   }
 }
 
+a:hover, a:focus, .link:hover, .link:focus, a.is-active {
+  color: #3d348b;
+  border-bottom: none;
+}
+
+a, .link {
+  color: #000;
+  border-bottom: none;
+}
+
+//Header
 .region-header {
+  height: 90px;
   position: relative;
   #block-sitebranding {
     margin: 0;
@@ -31,6 +53,57 @@
   }
 }
 
+// Primary menu & Social links
+.region-primary-menu {
+  height: 60px;
+  background-image: linear-gradient(
+      0deg, rgb(226, 226, 226) 0%, rgb(255, 255, 255) 75%);
+  position: relative;
+  nav, #block-sociallinks {
+    display: inline-block;
+  }
+  .menu {
+    a {
+      padding: 19px 22px 19px 0;
+      font-size: 15px;
+      font-weight: bold;
+      background: none;
+      margin: 0 auto;
+    }
+
+    a:hover, a.is-active {
+      background: none;
+      color: #3d348b;
+    }
+  }
+  #block-sociallinks {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    li {
+      display: inline-block;
+      margin: 0 20px 0 0;
+    }
+  }
+  //Search form
+  .search-block-form {
+    display: none;
+  }
+}
+
+//Ads-block (homepage center)
+#block-news-adsblock {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  img {
+    vertical-align: middle;
+  }
+}
+
+//Trending slider (view, homepage)
 #block-views-block-news-left-sidebar-block-6 {
   margin-top: 15px;
   padding: 0;
@@ -102,51 +175,7 @@
   }
 }
 
-.region-primary-menu {
-  height: 60px;
-  background-image: linear-gradient(
-      0deg, rgb(226, 226, 226) 0%, rgb(255, 255, 255) 75%);
-  position: relative;
-  nav, #block-sociallinks {
-    display: inline-block;
-  }
-  .menu {
-    a {
-      padding: 19px 22px 19px 0;
-      font-size: 15px;
-      font-weight: bold;
-      background: none;
-      margin: 0 auto;
-    }
-
-    a:hover, a.is-active {
-      background: none;
-      color: #3d348b;
-    }
-  }
-  #block-sociallinks {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    li {
-      display: inline-block;
-      margin: 0 20px 0 0;
-    }
-  }
-}
-
-.fa-2x {
-  font-size: 1.3em;
-}
-
-#content {
-  width: 61%;
-  margin-right: 19.5%;
-  margin-left: 19.5%;
-}
-
+//Sidebar left (Latest / Trending news view)
 #sidebar-first {
   position: -webkit-sticky;
   position: sticky;
@@ -229,6 +258,7 @@
   }
 }
 
+//Sidebar right (ads-block + Popular news View + Subscribe form)
 #sidebar-second {
   margin-left: -18%;
   width: 18%;
@@ -287,7 +317,7 @@
       }
     }
   }
-  .views-row:nth-child(n+2):nth-child(-n+10) {
+  .views-row:nth-child(n+2):nth-child(-n+5) {
     margin-top: 15px;
     .views-field-counter {
       position: relative;
@@ -323,125 +353,7 @@
   }
 }
 
-.sidebar {
-  .section {
-    padding: 0;
-  }
-
-  .block {
-    border-color: #fff;
-    background-color: #fff;
-  }
-}
-
-.region-header {
-  height: 90px;
-}
-
-a:hover,
-a:focus,
-.link:hover,
-.link:focus,
-a.is-active {
-  color: #3d348b;
-  border-bottom: none;
-}
-
-a, .link {
-  color: #000;
-  border-bottom: none;
-}
-
-
-.site-footer__top .region {
-  width: 32%;
-  padding: 0 0.65%;
-}
-
-#block-views-block-news-left-sidebar-block-7, #block-views-block-news-left-sidebar-block-3-2 {
-  margin-top: 20px;
-  padding: 0 2%;
-  align-content: center;
-  width: 66.66666667%;
-  background: white;
-  border-top: 5px solid #3d348b;
-  box-shadow: 0 2px 4px;
-   .views-row {
-     border: none;
-   }
-  h2 {
-    font-size: 16px;
-    display: block;
-    color: #000000;
-    font-weight: bold;
-    border-bottom: 2px solid #f5f5f5;
-  }
-  .views-col {
-    position: relative;
-    .views-field-field-news-category {
-      position: absolute;
-      margin: 45% 0 0 10px;
-      .field-content {
-        a {
-          font-size: 11px;
-          color: #fff;
-          text-transform: uppercase;
-          background-color: #3d348b;
-          padding: 0 5px;
-        }
-      }
-    }
-    .views-field-title {
-      span {
-        color: #221e22;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 1.4;
-      }
-    }
-    .views-field-uid {
-      text-transform: uppercase;
-      color: #3d348b;
-      font-size: 11px;
-      font-weight: bolder;
-    }
-    .views-field-created {
-      text-transform: uppercase;
-      font-size: 11px;
-    }
-    p {
-      font-size: 16px;
-      color: #000000;
-    }
-  }
-}
-
-.news-paragraph {
-  .left-group, .right-group {
-    display: inline-block;
-    width: 49%;
-  }
-  .left-group {
-    float: left;
-    margin-right: 1%;
-  }
-  .right-group {
-    float: right;
-    margin-left: 1%;
-  }
-  .field--name-field-news-title {
-    font-size: 25px;
-  }
-  .field--name-field-slogan {
-    font-size: 19px;
-    margin-bottom: 30px;
-  }
-}
-
-.node .field--type-image {
-  margin: 0;
-}
-
+//Homepage Paragraph (Main News)
 .homepage-paragraph {
   display: flex;
   .first-group, .second-group {
@@ -553,32 +465,66 @@ a, .link {
   }
 }
 
-.relative-news-paragraph {
-  .relative-links {
-    padding: 15px 0;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    .relative-link-1, .relative-link-2 {
-      display: inline-block;
-      width: 47%;
-      text-align: center;
-      vertical-align: middle;
-      padding-right: 1%;
-      padding-left: 1%;
-      a {
-        font-family: Merriweather,sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        letter-spacing: normal;
-        color: #221e22;
+//Economy & Government blocks
+#block-views-block-news-left-sidebar-block-7, #block-views-block-news-left-sidebar-block-3-2 {
+  margin-top: 20px;
+  padding: 0 2%;
+  align-content: center;
+  width: 66.66666667%;
+  background: white;
+  border-top: 5px solid #3d348b;
+  box-shadow: 0 2px 4px;
+  .views-row {
+    border: none;
+  }
+  h2 {
+    font-size: 16px;
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #f5f5f5;
+  }
+  .views-col {
+    position: relative;
+    .views-field-field-news-category {
+      position: absolute;
+      margin: 45% 0 0 10px;
+      .field-content {
+        a {
+          font-size: 11px;
+          color: #fff;
+          text-transform: uppercase;
+          background-color: #3d348b;
+          padding: 0 5px;
+        }
       }
     }
-    .relative-link-1 {
-      border-right: 2px solid #fff;
+    .views-field-title {
+      span {
+        color: #221e22;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.4;
+      }
+    }
+    .views-field-uid {
+      text-transform: uppercase;
+      color: #3d348b;
+      font-size: 11px;
+      font-weight: bolder;
+    }
+    .views-field-created {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    p {
+      font-size: 16px;
+      color: #000000;
     }
   }
 }
 
+//Editor Picks (view of paragraphs) - Homepage
 .block-views-blockeditor-picks-news-block-1 {
   width: 66.666667%;
   margin-top: 20px;
@@ -664,6 +610,7 @@ a, .link {
   }
 }
 
+//Evening Report block
 .block-views-blocknews-left-sidebar-block-5 {
   width: 100%;
   margin-top: 20px;
@@ -731,4 +678,55 @@ a, .link {
     }
   }
 }
+
+//News pages main paragraph (image and Text)
+.news-paragraph {
+  .left-group, .right-group {
+    display: inline-block;
+    width: 49%;
+  }
+  .left-group {
+    float: left;
+    margin-right: 1%;
+  }
+  .right-group {
+    float: right;
+    margin-left: 1%;
+  }
+  .field--name-field-news-title {
+    font-size: 25px;
+  }
+  .field--name-field-slogan {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+//News pages Relative news (links)
+.relative-news-paragraph {
+  .relative-links {
+    padding: 15px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    .relative-link-1, .relative-link-2 {
+      display: inline-block;
+      width: 47%;
+      text-align: center;
+      vertical-align: middle;
+      padding-right: 1%;
+      padding-left: 1%;
+      a {
+        font-family: Merriweather,sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: normal;
+        color: #221e22;
+      }
+    }
+    .relative-link-1 {
+      border-right: 2px solid #fff;
+    }
+  }
+}
+
 
