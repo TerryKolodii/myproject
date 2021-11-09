@@ -1,0 +1,15 @@
+uuid: 591ff67f-ca1b-40a3-9fcd-147b81f10431
+langcode: en
+status: true
+dependencies: {  }
+name: editor_picks_large_120x86_
+label: 'Editor-picks-Small (120x86)'
+effects:
+  e37ca134-2b4f-4a20-8c4f-a519b60da618:
+    uuid: e37ca134-2b4f-4a20-8c4f-a519b60da618
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 120
+      height: 86
+      anchor: center-center

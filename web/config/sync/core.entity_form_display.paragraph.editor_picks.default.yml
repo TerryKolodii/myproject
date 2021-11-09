@@ -1,0 +1,49 @@
+uuid: 5552d573-2240-46a0-85b4-a0c8a05367b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editor_picks.field_editor_picks_left
+    - field.field.paragraph.editor_picks.field_editor_picks_right
+    - paragraphs.paragraphs_type.editor_picks
+  module:
+    - field_layout
+    - layout_discovery
+    - paragraphs
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.editor_picks.default
+targetEntityType: paragraph
+bundle: editor_picks
+mode: default
+content:
+  field_editor_picks_left:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_editor_picks_right:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

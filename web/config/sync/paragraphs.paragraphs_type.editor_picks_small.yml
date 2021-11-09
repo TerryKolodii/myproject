@@ -1,0 +1,18 @@
+uuid: 5b9cf1b6-6327-4ec1-89d9-466cfce79469
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraph_view_mode
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  paragraph_view_mode:
+    enabled: false
+id: editor_picks_small
+label: Editor-picks-Small
+icon_uuid: null
+icon_default: null
+description: 'for homepage'
+behavior_plugins: {  }

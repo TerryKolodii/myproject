@@ -1,0 +1,95 @@
+uuid: e69c4281-3970-4de4-8c64-0d47dc17d2b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editor_picks.field_editor_picks_left
+    - field.field.paragraph.editor_picks.field_editor_picks_right
+    - paragraphs.paragraphs_type.editor_picks
+  module:
+    - ds
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          147b97e2-d267-45cf-b827-42eeb868314b:
+            uuid: 147b97e2-d267-45cf-b827-42eeb868314b
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:editor_picks:field_editor_picks_left'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          28f54ac3-e8fe-4797-9ad6-adac49932dca:
+            uuid: 28f54ac3-e8fe-4797-9ad6-adac49932dca
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:editor_picks:field_editor_picks_right'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      first:
+        - field_editor_picks_left
+      second:
+        - field_editor_picks_right
+id: paragraph.editor_picks.default
+targetEntityType: paragraph
+bundle: editor_picks
+mode: default
+content:
+  field_editor_picks_left:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: first
+  field_editor_picks_right:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: second
+hidden:
+  search_api_excerpt: true

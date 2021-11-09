@@ -1,0 +1,19 @@
+uuid: 84a14b69-dfe0-48c1-8369-3ca1b4fa0781
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_read_more_button
+field_name: field_read_more_button
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
