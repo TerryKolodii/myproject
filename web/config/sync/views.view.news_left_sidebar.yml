@@ -1893,7 +1893,7 @@ display:
           inline:
             title: title
             created: created
-          separator: ''
+          separator: ' '
           hide_empty: false
       fields:
         title:
