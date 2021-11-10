@@ -128,19 +128,24 @@ a, .link {
 }
 
 //Trending slider (view, homepage)
-#block-views-block-news-left-sidebar-block-6 {
+.block-views-blocknews-left-sidebar-block-6 {
   margin-top: 15px;
   padding: 0;
   background: #fff;
   position: relative;
+  @media screen and (max-width: $phone-max) {
+    display: none;
+  }
   h2, .content {
-    margin-top: 0;
     display: inline-block;
+    margin: 0 auto;
   }
   h2 {
+    padding: 1% 0;
+    line-height: 100%;
+    vertical-align: middle;
     text-align: center;
     width: 10%;
-    line-height: 40px;
     background-color: #3d348b;
     font-size: 11px;
     font-weight: bold;
@@ -148,27 +153,37 @@ a, .link {
     font-family: Heebo,Helvetica,Arial,sans-serif;
   }
   .content {
-    margin-left: 10px;
-    line-height: 40px;
-    width: calc(85%);
+    padding: 1% 0;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-left: 1%;
+    width: 88%;
   }
-  #views_slideshow_cycle_main_news_left_sidebar-block_6, .views-slideshow-controls-bottom {
+  .views_slideshow_cycle_main, .views-slideshow-controls-bottom {
     display: inline-block;
   }
-  #views_slideshow_cycle_main_news_left_sidebar-block_6 {
-    width: 60%;
+  .views_slideshow_cycle_main {
+    width: 80%;
+    .views_slideshow_cycle_teaser_section {
+      width: available;
+      height: auto;
+      .views-field-title {
+        max-width: 80%;
+      }
+    }
   }
   .views-slideshow-controls-bottom {
     position: absolute;
-    width: 35%;
+    right: 1%;
+    width: 18%;
     text-align: right;
-    line-height: 40px;
     .views_slideshow_controls_text {
       span a {
         visibility: hidden;
       }
       span:nth-child(odd) {
         a:hover {
+          display: inline-block;
           background: #f5f5f5;
           text-decoration: none;
         }
@@ -177,9 +192,6 @@ a, .link {
         a::after {
           visibility: visible;
           content: "<";
-          width: 39px;
-          text-align: center;
-          color: black;
         }
       }
       span:nth-child(2) {
