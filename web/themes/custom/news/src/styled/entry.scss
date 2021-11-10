@@ -571,10 +571,10 @@ a, .link {
 
 //Editor Picks (view of paragraphs) - Homepage
 .block-views-blockeditor-picks-news-block-1 {
-  margin-top: 20px;
-  padding: 0 2%;
+  margin: 20px 0;
+  padding: 0 2% 2%;
   align-content: center;
-  background: white;
+  background: #fff;
   border-top: 5px solid #3d348b;
   box-shadow: 0 2px 4px;
   h2 {
@@ -584,71 +584,96 @@ a, .link {
     font-weight: bold;
     border-bottom: 2px solid #f5f5f5;
   }
-  .views_slideshow_cycle_slide {
-    width: inherit;
-    .layout__region--first {
-      .paragraph--type--editor-picks-large {
-        position: relative;
-        .field--name-field-news-category {
-          position: absolute;
-          top: 30%;
-          left: 18px;
-          background: #3d348b;
-          padding: 0 12px;
-          a {
-            color: #fff;
-          }
+  .layout__region--first {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .field--name-field-news-image {
+      img {
+        @media screen and (max-width: 768px) {
+          width: 100%;
         }
-        .field--name-field-news {
-          width: 80%;
-          a {
-            color: #221e22;
-            font-size: 20px;
-            font-weight: bold;
-          }
+      }
+    }
+    .paragraph--type--editor-picks-large {
+      position: relative;
+      .field--name-field-news-category {
+        position: absolute;
+        top: 30%;
+        left: 18px;
+        background: #3d348b;
+        padding: 0 12px;
+        a {
+          color: #fff;
         }
-        .field--name-field-news-author, .field--name-field-news-date {
+      }
+      .field--name-field-news {
+        width: 80%;
+        a {
+          color: #221e22;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .field--name-field-news-author, .field--name-field-news-date {
+        display: inline-block;
+        a {
+          font-size: 11px;
+          font-weight: bold;
+          color: #3d348b;
+          text-transform: uppercase;
+        }
+      }
+      .field--name-field-news-short-description {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      .field--name-field-read-more-button {
+        a {
           display: inline-block;
-          a {
-            font-size: 11px;
-            font-weight: bold;
-            color: #3d348b;
-            text-transform: uppercase;
-          }
+          text-transform: uppercase;
+          letter-spacing: .05em;
+          font-size: 11px;
+          margin: 0 auto;
+          padding: 6px 18px;
+          border: 1px solid #e0e0e0;
+          text-rendering: auto;
+          transition: all .3s ease;
+          white-space: nowrap;
         }
-        .field--name-field-news-short-description {
-          font-size: 16px;
-          margin-bottom: 20px;
+        a:hover {
+          background: #3d348b;
+          color: #fff;
         }
-        .field--name-field-read-more-button {
-          a {
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: .05em;
-            font-size: 11px;
-            margin-top: 15px;
-            padding: 6px 18px;
-            border: 1px solid #e0e0e0;
-            text-rendering: auto;
-            transition: all .3s ease;
-            white-space: nowrap;
-          }
-          a:hover {
-            background: #3d348b;
-            color: #fff;
+      }
+    }
+  }
+  .layout__region--second {
+    .layout__region--first {
+      flex: 0 1 25%;
+      @media screen and (max-width: 768px) {
+        flex: 0 1 75%;
+      }
+      .field--type-image {
+        img {
+          margin: 0 0 0.5em;
+          @media screen and (max-width: 768px) {
+            display: none;
           }
         }
       }
     }
     .layout__region--second {
-      .field__item {
-        .layout__region--second {
-          .field--name-field-news {
-            a {
-              font-size: 15px;
-              font-weight: bold;
-            }
-          }
+      flex: 0 1 70%;
+      @media screen and (max-width: 768px) {
+        flex: 0 1 100%;
+      }
+      .field--type-entity-reference {
+        margin-bottom: 0;
+        a {
+          font-size: 16px;
+          font-weight: bold;
         }
       }
     }
