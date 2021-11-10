@@ -10,7 +10,6 @@ dependencies:
     - field.field.block_content.trending_news_block_small.field_news_category
     - field.field.block_content.trending_news_block_small.field_news_date
     - field.field.block_content.trending_news_block_small.field_news_reference
-    - image.style.trending_news_block_small
   module:
     - datetime
     - image
@@ -31,7 +30,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: trending_news_block_small
+      image_style: ''
       image_link: content
     third_party_settings: {  }
     type: image
