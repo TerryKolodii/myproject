@@ -6,6 +6,9 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
+/web/themes/custom/news/dist/
+/web/themes/custom/news/node_modules/
+
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
