@@ -1,0 +1,54 @@
+// General
+#page, #main-wrapper,
+.region-primary-menu .menu-item a.is-active,
+.region-primary-menu .menu-item--active-trail a {
+  background-color: #f5f5f5;
+}
+
+.layout-container {
+  max-width: 100%;
+  #content {
+    width: 61%;
+    margin: 0 19.5%;
+  }
+
+  @media screen and (max-width: $tablet) {
+    #content {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .sidebar {
+    .section {
+      padding: 0;
+    }
+
+    .block {
+      border-color: #fff;
+      background-color: #fff;
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  .site-footer__top .region {
+    width: 32%;
+    padding: 0 0.65%;
+  }
+  .node .field--type-image {
+    margin: 0;
+  }
+}
+
+a:hover, a:focus, .link:hover, .link:focus, a.is-active {
+  color: #3d348b;
+  border-bottom: none;
+}
+
+a, .link {
+  color: #000;
+  border-bottom: none;
+}

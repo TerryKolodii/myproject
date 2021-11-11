@@ -1,0 +1,94 @@
+//Sidebar right (ads-block + Popular news View + Subscribe form)
+#sidebar-second {
+  margin-left: -18%;
+  width: 18%;
+  #block-news-adsblockright {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+  .block-views-blocknews-left-sidebar-block-2 {
+    box-shadow: 0 2px 4px;
+    border-top: 5px solid #3d348b;
+  }
+  h2 {
+    font-size: 16px;
+    display: block;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #f5f5f5;
+  }
+  a {
+    font-size: 17px;
+  }
+  .views-row {
+
+  }
+  .views-row:nth-child(1) {
+    padding-bottom: 15px;
+    border-bottom: 3px solid #eee;
+    .views-field-title, .views-field-counter span {
+      display: inline-block;
+
+    }
+    .views-field-title {
+      width: 80%;
+      span {
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+    .views-field-counter {
+      span {
+        float: right;
+        left: auto;
+        text-align: center;
+        height: auto;
+        line-height: 1;
+        width: 50px;
+        font-size: 36px;
+        font-weight: bold;
+        font-style: italic;
+        border-radius: 0;
+        background: 0 0;
+        border-left: 1px solid #eee;
+        color: #d7d7d7;
+        -webkit-animation: none;
+      }
+    }
+  }
+  .views-row:nth-child(n+2):nth-child(-n+5) {
+    margin-top: 15px;
+    .views-field-counter {
+      position: relative;
+      float: left;
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-style: italic;
+        background: #eee;
+        padding: 10px;
+        border-radius: 100%;
+        box-sizing: content-box;
+        transition: all .3s;
+      }
+      span:hover {
+        background-color: #3d348b;
+        color: white;
+      }
+    }
+    .views-field-title, .views-field-comment-count {
+      margin-left: 60px;
+      font-size: 14px;
+    }
+    img {
+      display: none;
+    }
+  }
+}
