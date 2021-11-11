@@ -1,0 +1,49 @@
+//News pages main paragraph (image and Text)
+.news-paragraph {
+  .left-group, .right-group {
+    display: inline-block;
+    width: 49%;
+  }
+  .left-group {
+    float: left;
+    margin-right: 1%;
+  }
+  .right-group {
+    float: right;
+    margin-left: 1%;
+  }
+  .field--name-field-news-title {
+    font-size: 25px;
+  }
+  .field--name-field-slogan {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+}
+
+//News pages Relative news (links)
+.relative-news-paragraph {
+  .relative-links {
+    padding: 15px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    .relative-link-1, .relative-link-2 {
+      display: inline-block;
+      width: 47%;
+      text-align: center;
+      vertical-align: middle;
+      padding-right: 1%;
+      padding-left: 1%;
+      a {
+        font-family: Merriweather,sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: normal;
+        color: #221e22;
+      }
+    }
+    .relative-link-1 {
+      border-right: 2px solid #fff;
+    }
+  }
+}

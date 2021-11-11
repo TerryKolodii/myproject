@@ -1,13 +1,16 @@
 //Sidebar left (Latest / Trending news view)
 #sidebar-first {
+
+  background: white;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 18%;
+  ul {
+    float: left;
+    border-bottom: 2px solid #f5f5f5;
+  }
   .block-views-blocknews-left-sidebar-block-1 {
-    a {
-      font-size: 17px;
-    }
 
     .tab {
       overflow: hidden;
@@ -39,7 +42,7 @@
         }
         .views-field-title {
           a {
-            font-size: 17px;
+            font-size: 1vw;
           }
         }
       }
@@ -68,8 +71,11 @@
         }
       }
       li:nth-child(n+2):nth-child(-n+10) {
+
+        border-bottom: 2px solid #f5f5f5;
         .views-field-field-image {
           float: left;
+          clear: left;
         }
         img {
           width: 75px;
