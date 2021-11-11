@@ -30,7 +30,7 @@ const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
-  entry: ['@babel/polyfill', './index.js', './styled/entry.scss', './styled/styles.css'],
+  entry: ['@babel/polyfill', './index.js', './styles/entry.scss', './styles/styles.css'],
   output: {
     filename: filename('js', 'css'),
     path: path.resolve(__dirname, 'dist')
