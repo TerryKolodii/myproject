@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.editor_picks.field_editor_picks_right
     - paragraphs.paragraphs_type.editor_picks
   module:
-    - ds
     - entity_reference_revisions
     - layout_builder
 third_party_settings:
@@ -55,19 +54,6 @@ third_party_settings:
             additional: {  }
             weight: 1
         third_party_settings: {  }
-  ds:
-    layout:
-      id: layout_twocol
-      library: layout_discovery/twocol
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-    regions:
-      first:
-        - field_editor_picks_left
-      second:
-        - field_editor_picks_right
 id: paragraph.editor_picks.default
 targetEntityType: paragraph
 bundle: editor_picks

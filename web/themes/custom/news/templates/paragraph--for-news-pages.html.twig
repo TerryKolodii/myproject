@@ -47,30 +47,38 @@
   ]
 %}
 
+{% set background_image = file_url(content.field_news_image[0]['#media'].field_news_image.entity.uri.value) %}
+
 {% block paragraph %}
-  <div class="news-paragraph">
-    {% block content %}
-      {% if content.field_image_position['#items'].getString() =='1' %}
-        <div class="left-group">
-          {{ content.field_news_image }}
-        </div>
-        <div class="right-group">
-          {{ content.field_news_title }}
-          {{ content.field_news_author }}
-          {{ content.field_news_category }}
-          {{ content.field_slogan }}
-        </div>
-      {% else %}
-        <div class="left-group">
-          {{ content.field_news_title }}
-          {{ content.field_news_author }}
-          {{ content.field_news_category }}
-          {{ content.field_slogan }}
-        </div>
-        <div class="right-group">
-          {{ content.field_news_image }}
-        </div>
-      {% endif %}
-    {% endblock %}
+
+  <div class="news-paragraph" style="background-image: url({{ background_image }})">
+    <div class="image-wrapper">
+      {{ content.field_news_image }}
+      {{ content.field_news_title }}
+      {{ content.field_slogan }}
+      <span class="info">by {{ content.field_news_author }} - {{ content.field_news_date }} in {{ content.field_news_category }}</span>
+    </div>
   </div>
+
+{#      {% if content.field_image_position['#items'].getString() =='1' %}#}
+{#        <div class="left-group">#}
+{#          {{ content.field_news_image }}#}
+{#        </div>#}
+{#        <div class="right-group">#}
+{#          {{ content.field_news_title }}#}
+{#          {{ content.field_news_author }}#}
+{#          {{ content.field_news_category }}#}
+{#          {{ content.field_slogan }}#}
+{#        </div>#}
+{#      {% else %}#}
+{#        <div class="left-group">#}
+{#          {{ content.field_news_title }}#}
+{#          {{ content.field_news_author }}#}
+{#          {{ content.field_news_category }}#}
+{#          {{ content.field_slogan }}#}
+{#        </div>#}
+{#        <div class="right-group">#}
+{#          {{ content.field_news_image }}#}
+{#        </div>#}
+{#      {% endif %}#}
 {% endblock paragraph %}

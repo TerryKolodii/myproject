@@ -6,12 +6,14 @@ dependencies:
     - field.field.paragraph.for_news_pages.field_image_position
     - field.field.paragraph.for_news_pages.field_news_author
     - field.field.paragraph.for_news_pages.field_news_category
+    - field.field.paragraph.for_news_pages.field_news_date
     - field.field.paragraph.for_news_pages.field_news_image
     - field.field.paragraph.for_news_pages.field_news_title
     - field.field.paragraph.for_news_pages.field_slogan
     - image.style.thumbnail
     - paragraphs.paragraphs_type.for_news_pages
   module:
+    - datetime
     - field_layout
     - image
     - layout_discovery
@@ -51,6 +53,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_news_date:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   field_news_image:
     weight: 2

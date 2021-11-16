@@ -1,49 +1,84 @@
 //News pages main paragraph (image and Text)
-.news-paragraph {
-  .left-group, .right-group {
-    display: inline-block;
-    width: 49%;
-  }
-  .left-group {
-    float: left;
-    margin-right: 1%;
-  }
-  .right-group {
-    float: right;
-    margin-left: 1%;
-  }
-  .field--name-field-news-title {
-    font-size: 25px;
-  }
-  .field--name-field-slogan {
-    font-size: 19px;
-    margin-bottom: 30px;
-  }
-}
+.page-node-type-news {
+  .news-paragraph {
+    .image-wrapper {
+      height: 540px;
+      position: relative;
+      .field--name-field-news-image {
+        img {
+          height: 540px;
+          object-fit: cover;
+        }
+      }
 
-//News pages Relative news (links)
-.relative-news-paragraph {
-  .relative-links {
-    padding: 15px 0;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    .relative-link-1, .relative-link-2 {
-      display: inline-block;
-      width: 47%;
-      text-align: center;
-      vertical-align: middle;
-      padding-right: 1%;
-      padding-left: 1%;
-      a {
-        font-family: Merriweather,sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        letter-spacing: normal;
-        color: #221e22;
+      .field--name-field-news-title {
+        font-size: 30px;
+        position: absolute;
+        bottom: 20%;
+        left: 2%;
+        right: 2%;
+        color: white;
+        font-weight: bold;
+      }
+
+      .field--name-field-slogan {
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+        right: 2%;
+        color: white;
+        font-weight: bold;
+      }
+      .info {
+        display: block;
+        position: absolute;
+        bottom: 1%;
+        left: 2%;
+        right: 2%;
+        color: white;
+      }
+
+      .field--name-field-news-author, .field--name-field-news-date, .field--name-field-news-category {
+        display: inline-block;
+        a {
+        color: white;
+        }
+      }
+      .field--name-field-tag {
+        .field--item {
+          display: inline-block;
+        }
+        .field--item::after {
+          content: ", ";
+        }
       }
     }
-    .relative-link-1 {
-      border-right: 2px solid #fff;
+  }
+
+  //News pages Relative news (links)
+  .relative-news-paragraph {
+    .relative-links {
+      padding: 15px 0;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      .relative-link-1, .relative-link-2 {
+        display: inline-block;
+        width: 47%;
+        text-align: center;
+        vertical-align: middle;
+        padding-right: 1%;
+        padding-left: 1%;
+        a {
+          font-family: Merriweather,sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          letter-spacing: normal;
+          color: #221e22;
+        }
+      }
+      .relative-link-1 {
+        border-right: 2px solid #fff;
+      }
     }
   }
 }
