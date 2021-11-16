@@ -21,8 +21,8 @@ settings:
   provider: views
   label_display: visible
   views_label: 'Editor Picks'
-  items_per_page: none
-  pager: some
+  items_per_page: '1'
+  pager: view
 visibility:
   request_path:
     id: request_path

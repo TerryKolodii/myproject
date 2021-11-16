@@ -10,24 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.editor_picks_small
   module:
     - datetime
-    - ds
     - image
-third_party_settings:
-  ds:
-    layout:
-      id: layout_twocol_section
-      library: layout_builder/twocol_section
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        column_widths: 50-50
-    regions:
-      first:
-        - field_news_image
-      second:
-        - field_news
-        - field_news_date
 id: paragraph.editor_picks_small.default
 targetEntityType: paragraph
 bundle: editor_picks_small

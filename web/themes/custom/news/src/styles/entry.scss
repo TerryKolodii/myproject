@@ -314,6 +314,9 @@
   }
   .layout__region--content {
     display: flex;
+    .block-layout-builder {
+      width: 50%;
+    }
   }
   .layout__region--first {
     @media screen and (max-width: $phone-max) {
