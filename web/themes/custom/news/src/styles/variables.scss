@@ -1,3 +1,21 @@
 //breakpoints
 $tablet: 1024px;
 $phone-max: 768px;
+
+//Spacing multipliers
+$space-unit: 5px;
+@function spacing($multiplier) {
+  @return ($space-unit*$multiplier);
+}
+
+
+//font-sizes
+$fontXs: 10px;
+$fontSm: 12px;
+$fontMd: 14px;
+$fontLg: 16px;
+$fontXl: 18px;
+$font2xl: 22px;
+$font3xl: 26px;
+$font4xl: 36px;
+$font5xl: 48px;
