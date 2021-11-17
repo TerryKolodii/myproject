@@ -9,3 +9,9 @@ global-styling:
       dist/main.css: {}
     theme:
       dist/main.css: {}
+  js:
+    src/index.js: {minified: true}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

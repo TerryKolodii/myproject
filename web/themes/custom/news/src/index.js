@@ -1,20 +1,14 @@
-function openNewsList(evt, newsListName) {
-  // Declare all variables
-  let i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+(function (Drupal, $) {
+  Drupal.behaviors.addClassByClick = {
+    attach: function (context, settings) {
+      $('#block-hamburgermenuimage').click(function () {
+        $('.popup-menu').toggleClass('active');
+        $('#page-wrapper').append('<div class="menu-backdrop">');
+        $('.menu-backdrop').click(function () {
+          $('.popup-menu').removeClass('active');
+          $('.menu-backdrop').remove()
+        })
+      });
+    }
   }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(newsListName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+})(Drupal, jQuery)
