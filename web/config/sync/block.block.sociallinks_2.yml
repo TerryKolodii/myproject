@@ -1,4 +1,4 @@
-uuid: 60a9d5c8-21a9-4898-8cb2-abb824994bf0
+uuid: bfdd704b-d6b9-40c3-8c58-ec12ba61e968
 langcode: en
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     - 'block_content:social_links_block:0df09dda-bc1a-4fde-bad5-b20575bc8dc0'
   module:
     - block_content
-    - system
   theme:
     - news
-id: sociallinks
+id: sociallinks_2
 theme: news
-region: primary_menu
-weight: -13
+region: sidebar_hidden
+weight: -14
 provider: null
 plugin: 'block_content:0df09dda-bc1a-4fde-bad5-b20575bc8dc0'
 settings:
@@ -23,8 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
+visibility: {  }

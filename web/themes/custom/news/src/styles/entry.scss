@@ -6,6 +6,7 @@
 @import "sidebar-left";
 @import "sidebar-right";
 @import "news-pages";
+@import "pop-up-sidebar";
 
 //Trending slider (view, homepage)
 .block-views-blocknews-left-sidebar-block-6 {
@@ -322,101 +323,6 @@
     }
   }
 }
-//  .layout__region--first {
-//    @media screen and (max-width: $phone-max) {
-//      margin-bottom: 20px;
-//      width: 100%;
-//    }
-//    .field--name-field-news-image {
-//      img {
-//        @media screen and (max-width: $phone-max) {
-//          width: 100%;
-//        }
-//      }
-//    }
-//    .paragraph--type--editor-picks-large {
-//      position: relative;
-//      .field--name-field-news-category {
-//        position: absolute;
-//        top: 30%;
-//        left: 18px;
-//        background: #3d348b;
-//        padding: 0 12px;
-//        a {
-//          color: #fff;
-//        }
-//      }
-//      .field--name-field-news {
-//        width: 80%;
-//        a {
-//          color: #221e22;
-//          font-size: 20px;
-//          font-weight: bold;
-//        }
-//      }
-//      .field--name-field-news-author, .field--name-field-news-date {
-//        display: inline-block;
-//        a {
-//          font-size: 11px;
-//          font-weight: bold;
-//          color: #3d348b;
-//          text-transform: uppercase;
-//        }
-//      }
-//      .field--name-field-news-short-description {
-//        font-size: 16px;
-//        margin-bottom: 20px;
-//      }
-//      .field--name-field-read-more-button {
-//        a {
-//          display: inline-block;
-//          text-transform: uppercase;
-//          letter-spacing: .05em;
-//          font-size: 11px;
-//          margin: 0 auto;
-//          padding: spacing(1.5) spacing(4.5);
-//          border: 1px solid #e0e0e0;
-//          text-rendering: auto;
-//          transition: all .3s ease;
-//          white-space: nowrap;
-//        }
-//        a:hover {
-//          background: #3d348b;
-//          color: #fff;
-//        }
-//      }
-//    }
-//  }
-//  .layout__region--second {
-//    .layout__region--first {
-//      flex: 0 1 25%;
-//      @media screen and (max-width: $phone-max) {
-//        flex: 0 1 75%;
-//      }
-//      .field--type-image {
-//        img {
-//          margin: 0 0 0.5em;
-//          @media screen and (max-width: $phone-max) {
-//            display: none;
-//          }
-//        }
-//      }
-//    }
-//    .layout__region--second {
-//      flex: 0 1 70%;
-//      @media screen and (max-width: $phone-max) {
-//        flex: 0 1 100%;
-//      }
-//      .field--type-entity-reference {
-//        margin-bottom: 0;
-//        a {
-//          font-size: 16px;
-//          font-weight: bold;
-//        }
-//      }
-//    }
-//  }
-//}
 
 //Evening Report block
 .block-views-blocknews-left-sidebar-block-5 {

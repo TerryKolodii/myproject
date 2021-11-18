@@ -1,0 +1,25 @@
+uuid: fbb79fe0-6118-434b-8683-5bd272f1d7d9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image:ecb4b6ed-b493-4af8-94d3-da1ffd5d9bac'
+  module:
+    - block_content
+  theme:
+    - news
+id: hamburgermenuimage
+theme: news
+region: primary_menu
+weight: -16
+provider: null
+plugin: 'block_content:ecb4b6ed-b493-4af8-94d3-da1ffd5d9bac'
+settings:
+  id: 'block_content:ecb4b6ed-b493-4af8-94d3-da1ffd5d9bac'
+  label: 'Hamburger menu image'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

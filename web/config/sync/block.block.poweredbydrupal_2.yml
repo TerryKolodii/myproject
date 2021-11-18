@@ -1,0 +1,20 @@
+uuid: 6d28aef1-ef16-4abe-be7e-91c6b489de02
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - news
+id: poweredbydrupal_2
+theme: news
+region: sidebar_hidden
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
