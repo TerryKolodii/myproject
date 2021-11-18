@@ -1,4 +1,4 @@
-uuid: 9c435f49-3752-4791-beb5-c9859d18f706
+uuid: eb87d23e-ae6f-4c58-b3da-cbad828cb4b1
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,9 @@ dependencies:
     - system
   theme:
     - news
-id: mainnavigation
+id: mainnavigation_2
 theme: news
-region: primary_menu
+region: sidebar_hidden
 weight: -15
 provider: null
 plugin: 'system_menu_block:main'

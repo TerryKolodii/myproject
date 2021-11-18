@@ -1,0 +1,26 @@
+uuid: c52090d3-90bf-4078-a172-cd43b355b62e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image
+    - field.field.block_content.image.field_menu_image
+  module:
+    - image
+id: block_content.image.default
+targetEntityType: block_content
+bundle: image
+mode: default
+content:
+  field_menu_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
