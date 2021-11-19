@@ -2,11 +2,11 @@
   Drupal.behaviors.addClassByClick = {
     attach: function (context, settings) {
       $('#block-hamburgermenuimage').click(function () {
-        $('.popup-menu').toggleClass('active');
+        $('.popup-menu').addClass('active').show(400);
         $('#page-wrapper').append('<div class="menu-backdrop">');
         $('.menu-backdrop').click(function () {
-          $('.popup-menu').removeClass('active');
-          $('.menu-backdrop').remove()
+          $('.popup-menu').slideUp(200);
+          $('.menu-backdrop').slideUp(200)
         })
       });
     }
