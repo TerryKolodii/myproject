@@ -1,4 +1,4 @@
-#block-hamburgermenuimage {
+#block-hamburgermenuimage, #block-hamburgermenuimage-2 {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 0;
@@ -14,30 +14,46 @@
   }
 }
 
+#block-hamburgermenuimage-2 {
+  display: none;
+  position: fixed;
+  top: spacing(14);
+  left: spacing(5);
+  opacity: 0.7;
+  z-index: 40;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0 spacing(1);
+  transition: 1s;
+}
+
 .popup-menu {
+  background: url("https://www.wallpapertip.com/wmimgs/40-405583_high-resolution-white-background-hd.jpg") 100% 100% no-repeat;
+
   display: none;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   width: 330px;
-  background: white;
   border-right: solid 2px black;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
   .search-block-form {
+    background: none;
     padding-bottom: spacing(7);
     border-bottom: solid 1px black;
   }
   .region-sidebar-hidden {
+    background: none;
     width: 100%;
     position: absolute;
     left: 0;
     .block {
-      background: none;
       border: none;
     }
     nav {
+      background: none;
       .content {
         .clearfix {
           .menu-item {
@@ -63,6 +79,7 @@
       }
     }
     #block-sociallinks-2 {
+      background: none;
       position: fixed;
       bottom: spacing(7);
       left: 0;
@@ -70,10 +87,15 @@
         li {
           display: inline-block;
           margin-right: spacing(3);
+          transition: 1s;
+          &:hover {
+            transform: scale(1.5);
+          }
         }
       }
     }
     .block-system-powered-by-block {
+      background: none;
       position: fixed;
       bottom: 0;
       left: 0;
@@ -82,8 +104,6 @@
 }
 
 .active {
-  opacity: 1;
-  background: white;
   z-index: 1;
 }
 
