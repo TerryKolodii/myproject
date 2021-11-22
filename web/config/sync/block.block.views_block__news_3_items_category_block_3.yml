@@ -1,0 +1,29 @@
+uuid: d692095a-db25-421d-98e1-602cf1c285bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_3_items_category
+  module:
+    - system
+    - views
+  theme:
+    - news
+id: views_block__news_3_items_category_block_3
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_3_items_category-block_3'
+settings:
+  id: 'views_block:news_3_items_category-block_3'
+  label: Entertainment
+  provider: views
+  label_display: visible
+  views_label: Entertainment
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front> '
+    negate: false

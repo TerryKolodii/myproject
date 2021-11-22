@@ -1,0 +1,29 @@
+uuid: 717c94d5-f834-496f-b271-3f4c714f4b42
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_3_items_category
+  module:
+    - system
+    - views
+  theme:
+    - news
+id: views_block__news_3_items_category_block_1
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_3_items_category-block_1'
+settings:
+  id: 'views_block:news_3_items_category-block_1'
+  label: Government
+  provider: views
+  label_display: visible
+  views_label: Government
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

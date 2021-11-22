@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation
 theme: news
 region: primary_menu
-weight: -15
+weight: -17
 provider: null
 plugin: 'system_menu_block:main'
 settings:

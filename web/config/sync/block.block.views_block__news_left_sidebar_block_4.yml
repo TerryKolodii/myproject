@@ -1,0 +1,29 @@
+uuid: e114fd7f-5770-45e9-a892-9ebefbcbf04a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_left_sidebar
+  module:
+    - system
+    - views
+  theme:
+    - news
+id: views_block__news_left_sidebar_block_4
+theme: news
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'views_block:news_left_sidebar-block_4'
+settings:
+  id: 'views_block:news_left_sidebar-block_4'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

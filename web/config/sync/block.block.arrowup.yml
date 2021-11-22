@@ -1,0 +1,25 @@
+uuid: b3ca063f-665d-40d9-97de-a244b7716d4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image:16da4673-4c7a-4ecf-a83d-b368330bc7b0'
+  module:
+    - block_content
+  theme:
+    - news
+id: arrowup
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:16da4673-4c7a-4ecf-a83d-b368330bc7b0'
+settings:
+  id: 'block_content:16da4673-4c7a-4ecf-a83d-b368330bc7b0'
+  label: 'Arrow up'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

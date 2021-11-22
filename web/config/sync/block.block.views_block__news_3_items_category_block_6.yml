@@ -1,0 +1,29 @@
+uuid: 8fdc654b-6571-40a8-a4b6-c3bd268c8920
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_3_items_category
+  module:
+    - system
+    - views
+  theme:
+    - news
+id: views_block__news_3_items_category_block_6
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_3_items_category-block_6'
+settings:
+  id: 'views_block:news_3_items_category-block_6'
+  label: Electrical
+  provider: views
+  label_display: visible
+  views_label: Electrical
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
