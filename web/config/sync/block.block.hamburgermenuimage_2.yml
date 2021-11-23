@@ -1,4 +1,4 @@
-uuid: fbb79fe0-6118-434b-8683-5bd272f1d7d9
+uuid: cb4bee88-12d1-4979-bee3-ae8584de3577
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ dependencies:
     - block_content
   theme:
     - news
-id: hamburgermenuimage
+id: hamburgermenuimage_2
 theme: news
-region: primary_menu
-weight: -18
+region: sidebar_first
+weight: -17
 provider: null
 plugin: 'block_content:ecb4b6ed-b493-4af8-94d3-da1ffd5d9bac'
 settings:
