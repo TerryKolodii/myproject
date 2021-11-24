@@ -12,6 +12,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'generate lorem ipsum'
   - 'search content'
   - 'use text format restricted_html'
   - 'view paragraph content categories_small_blocks'

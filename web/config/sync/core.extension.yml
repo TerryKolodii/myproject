@@ -46,8 +46,10 @@ module:
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  loremipsum: 0
   menu_link_content: 0
   menu_ui: 0
+  my_custom_module: 0
   node: 0
   options: 0
   page_cache: 0
