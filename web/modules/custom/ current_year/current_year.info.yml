@@ -1,0 +1,6 @@
+name: Current Year
+description: Module shows current year on block
+package: Custom
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
