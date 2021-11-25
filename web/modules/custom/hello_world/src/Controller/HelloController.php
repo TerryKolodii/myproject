@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\my_custom_module\Controller;
+namespace Drupal\hello_world\Controller;
 use Drupal\Core\Controller\ControllerBase;
 class HelloController extends ControllerBase {
   public function hello_world() {

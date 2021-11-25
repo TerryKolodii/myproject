@@ -1,4 +1,4 @@
-name: My Custom Module
+name: Hello, World
 description: Hello world custom module for Drupal 9
 type: module
 core: 8.x
