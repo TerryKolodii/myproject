@@ -1,0 +1,25 @@
+uuid: 889cdac2-d7da-4788-89c2-9632ef083d81
+langcode: en
+status: true
+dependencies:
+  module:
+    - current_year
+    - system
+  theme:
+    - news
+id: currentyearblock
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: current_year_block
+settings:
+  id: current_year_block
+  label: 'Current Year Block'
+  provider: current_year
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false
