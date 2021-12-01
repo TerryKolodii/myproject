@@ -12,7 +12,7 @@ dependencies:
 id: news_contactdetail
 theme: news
 region: sidebar_second
-weight: -7
+weight: -20
 provider: null
 plugin: 'block_content:9e9d7920-7562-40ad-997d-30aa61a4cf2a'
 settings:

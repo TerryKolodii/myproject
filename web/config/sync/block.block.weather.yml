@@ -1,0 +1,25 @@
+uuid: 750cf28f-5913-4fe6-a8ec-6d1590637439
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - weather
+  theme:
+    - news
+id: weather
+theme: news
+region: content
+weight: 0
+provider: null
+plugin: weather_block
+settings:
+  id: weather_block
+  label: Weather
+  provider: weather
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact-us
+    negate: false

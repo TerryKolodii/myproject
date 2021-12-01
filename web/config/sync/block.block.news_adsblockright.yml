@@ -11,7 +11,7 @@ dependencies:
 id: news_adsblockright
 theme: news
 region: sidebar_second
-weight: 0
+weight: -19
 provider: null
 plugin: 'block_content:7c47d666-90f4-4ca9-9f28-e6f08c3f082c'
 settings:

@@ -41,8 +41,11 @@ module:
   flexslider_views: 0
   help: 0
   history: 0
+  http_client_manager: 0
+  http_client_manager_example: 0
   image: 0
   imce: 0
+  jsonapi: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
@@ -63,6 +66,7 @@ module:
   search: 0
   search_api: 0
   search_api_db: 0
+  serialization: 0
   shortcut: 0
   social_media_links: 0
   social_media_links_field: 0
@@ -79,6 +83,7 @@ module:
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
+  weather: 0
   webform: 0
   webform_ui: 0
   workflows: 0
