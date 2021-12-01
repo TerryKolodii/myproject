@@ -1,4 +1,4 @@
-uuid: 750cf28f-5913-4fe6-a8ec-6d1590637439
+uuid: e1627865-d24f-4a74-8da5-d63fb1b03e83
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - news
 id: weather
 theme: news
-region: content
+region: sidebar_second
 weight: 0
 provider: null
 plugin: weather_block
@@ -17,9 +17,9 @@ settings:
   id: weather_block
   label: Weather
   provider: weather
-  label_display: visible
+  label_display: '0'
 visibility:
   request_path:
     id: request_path
-    pages: /contact-us
+    pages: '<front>'
     negate: false

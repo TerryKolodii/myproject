@@ -33,7 +33,7 @@ class WeatherBlock extends BlockBase {
   public function build() {
     $client = \Drupal::httpClient();
     $userIp = \Drupal::request()->getClientIp();
-    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'London';
+    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'Kivertsi';
     $config = \Drupal::config('weather.adminsettings');
     $key = $config->get('weather_key');
     $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
