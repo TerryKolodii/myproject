@@ -21,16 +21,22 @@ class WeatherBlock extends BlockBase {
   /**
    * {@inheritdoc}
    */
+  public function getWeatherKey(&$form, $form_id) {
+    if ($form_id == 'weather_form') {
+      return $form['weather_key']['#default_value'];
+    };
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     $client = \Drupal::httpClient();
     $userIp = \Drupal::request()->getClientIp();
-    if (isset(json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city)) {
-      $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city;
-    }
-    else {
-      $city = 'Lutsk';
-    }
-    $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=a21e7917df394ddd5f528d92e1a67d8a&units=metric")
+    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'London';
+    $config = \Drupal::config('weather.adminsettings');
+    $key = $config->get('weather_key');
+    $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
       ->getBody()->getContents());
     return [
       '#markup' => $this->t('@city, @tempMin° - @tempMax°',
