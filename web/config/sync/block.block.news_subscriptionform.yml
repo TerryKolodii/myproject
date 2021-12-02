@@ -12,7 +12,7 @@ dependencies:
 id: news_subscriptionform
 theme: news
 region: sidebar_second
-weight: 0
+weight: -16
 provider: null
 plugin: 'block_content:f8f09992-e602-4c8e-8abb-66f44839146e'
 settings:

@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation_2
 theme: news
 region: sidebar_hidden
-weight: -15
+weight: -21
 provider: null
 plugin: 'system_menu_block:main'
 settings:
