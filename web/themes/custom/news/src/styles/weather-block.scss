@@ -1,0 +1,25 @@
+#block-weather {
+  background: inherit;
+  border: none;
+  >.content {
+    .content {
+      margin-top: 0;
+      .weather-image, .weather-info {
+
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .weather-image {
+        margin-right: spacing(4);
+      }
+      .weather-city {
+        font-size: $fontXl;
+        font-weight: bold;
+      }
+      .weather-temperature {
+        font-size: $fontMd;
+      }
+    }
+
+  }
+}

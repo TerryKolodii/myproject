@@ -9,3 +9,16 @@ function weather_user_login() {
   $config = \Drupal::config('weather.adminsettings');
   drupal_set_message($config->get('weather_key'));
 }
+
+/**
+ * Implements hook_theme().
+ */
+function weather_theme() {
+  return [
+    'weather' => [
+      'variables' => [
+        'data' => [],
+      ],
+    ],
+  ];
+}

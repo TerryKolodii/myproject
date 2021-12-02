@@ -18,33 +18,52 @@ use Symfony\Component\HttpFoundation;
  */
 class WeatherBlock extends BlockBase {
 
+//  public function build() {
+//    $client = \Drupal::httpClient();
+//    $userIp = \Drupal::request()->getClientIp();
+//    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'Lutsk';
+//    $config = \Drupal::config('weather.adminsettings');
+//    $key = $config->get('weather_key');
+//    $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
+//      ->getBody()->getContents(), TRUE);
+//    return [
+//      '#markup' => $this->t('@city, @tempMin° - @tempMax°',
+//        [
+//          '@city' => $result['name'],
+//          '@tempMin' => round($result['main']['temp_min']),
+//          '@tempMax' => round($result['main']['temp_max']),
+//        ]),
+//    ];
+//  }
+
   /**
    * {@inheritdoc}
    */
-  public function getWeatherKey(&$form, $form_id) {
-    if ($form_id == 'weather_form') {
-      return $form['weather_key']['#default_value'];
-    };
+
+  public function getWeatherByIp() {
+    $client = \Drupal::httpClient();
+    $userIp = \Drupal::request()->getClientIp();
+    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'Lutsk';
+    $config = \Drupal::config('weather.adminsettings');
+    $key = $config->get('weather_key');
+    $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
+      ->getBody()->getContents(), TRUE);
+    return [
+      'city' => $result['name'],
+      'tempMin' => round($result['main']['temp_min']),
+      'tempMax' => round($result['main']['temp_max']),
+      'icon' => $result['weather'][0]['icon'],
+    ];
   }
 
   /**
    * {@inheritdoc}
    */
   public function build() {
-    $client = \Drupal::httpClient();
-    $userIp = \Drupal::request()->getClientIp();
-    $city = json_decode($client->get("ip-api.com/json/$userIp")->getBody()->getContents())->city ?? 'Kivertsi';
-    $config = \Drupal::config('weather.adminsettings');
-    $key = $config->get('weather_key');
-    $result = json_decode($client->get("api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
-      ->getBody()->getContents());
+    $data = $this::getWeatherByIp();
     return [
-      '#markup' => $this->t('@city, @tempMin° - @tempMax°',
-        [
-          '@city' => $result->name,
-          '@tempMin' => round($result->main->temp_min),
-          '@tempMax' => round($result->main->temp_max),
-        ]),
+      '#theme' => 'weather',
+      '#data' => $data,
     ];
   }
 
