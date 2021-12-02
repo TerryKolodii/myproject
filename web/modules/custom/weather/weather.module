@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Contains weather.module.
+ */
+
+function weather_user_login() {
+  $config = \Drupal::config('weather.adminsettings');
+  drupal_set_message($config->get('weather_key'));
+}

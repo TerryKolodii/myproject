@@ -9,7 +9,7 @@ dependencies:
 id: searchform_2
 theme: news
 region: sidebar_hidden
-weight: -16
+weight: -22
 provider: null
 plugin: search_form_block
 settings:

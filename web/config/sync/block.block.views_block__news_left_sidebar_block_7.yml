@@ -12,7 +12,7 @@ dependencies:
 id: views_block__news_left_sidebar_block_7
 theme: news
 region: content
-weight: -9
+weight: -16
 provider: null
 plugin: 'views_block:news_left_sidebar-block_7'
 settings:

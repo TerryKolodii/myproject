@@ -12,7 +12,7 @@ dependencies:
 id: news_getintouch
 theme: news
 region: content
-weight: -11
+weight: -18
 provider: null
 plugin: 'block_content:6453f8c5-f34e-4ad4-83c2-c4076d6f4e75'
 settings:

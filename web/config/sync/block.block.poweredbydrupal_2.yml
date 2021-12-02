@@ -9,7 +9,7 @@ dependencies:
 id: poweredbydrupal_2
 theme: news
 region: sidebar_hidden
-weight: 0
+weight: -19
 provider: null
 plugin: system_powered_by_block
 settings:

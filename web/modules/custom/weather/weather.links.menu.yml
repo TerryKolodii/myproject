@@ -1,0 +1,6 @@
+weather.admin_settings_form:
+  title: 'Weather key configuration'
+  route_name: weather.admin_settings_form
+  description: 'Weather key admin'
+  parent: system.admin_config_system
+  weight: 99

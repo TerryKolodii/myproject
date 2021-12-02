@@ -1,0 +1,6 @@
+name: Weather
+description: Provides a custom block with weather info
+package: Custom
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
