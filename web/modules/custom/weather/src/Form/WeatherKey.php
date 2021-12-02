@@ -37,6 +37,13 @@ class WeatherKey extends ConfigFormBase {
       '#default_value' => $config->get('weather_key'),
     ];
 
+    $form['weather_city'] = [
+      '#type' => 'textarea',
+      '#title' => $this->t('Weather city'),
+      '#description' => $this->t('For weather block'),
+      '#default_value' => $config->get('weather_city'),
+    ];
+
     return parent::buildForm($form, $form_state);
   }
 
@@ -49,5 +56,10 @@ class WeatherKey extends ConfigFormBase {
     $this->config('weather.adminsettings')
       ->set('weather_key', $form_state->getValue('weather_key'))
       ->save();
+
+    $this->config('weather.adminsettings')
+      ->set('weather_city', $form_state->getValue('weather_city'))
+      ->save();
   }
+
 }
