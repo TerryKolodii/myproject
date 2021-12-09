@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * @see template_preprocess_field()
+ */
+#}
+{%
+  set classes = [
+  'field',
+  'field--' ~ field_name|clean_class,
+  label_display == 'visually_hidden' ?: 'is-label-' ~ label_display|clean_class,
+]
+%}
+{%
+  set title_classes = [
+  'field__label',
+  label_display == 'visually_hidden' ? 'visually-hidden',
+]
+%}
+
+{% set paragraph = element['#object'] %}
+{% set title_element = paragraph.getBehaviorSetting('paragraphs_behaviour_paragraph_title', 'title_element', 'h2') %}
+
+{% for item in items %}
+  <{{ title_element }}{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</{{ title_element }}>
+{% endfor %}
