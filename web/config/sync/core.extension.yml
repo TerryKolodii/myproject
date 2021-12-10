@@ -59,6 +59,7 @@ module:
   options: 0
   page_cache: 0
   paragraph_view_mode: 0
+  paragraphs_behaviour: 0
   paragraphs_library: 0
   paragraphs_type_permissions: 0
   path: 0

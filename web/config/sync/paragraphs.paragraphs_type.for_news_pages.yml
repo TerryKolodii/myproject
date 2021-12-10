@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - paragraph_view_mode
+    - paragraphs_behaviour
 third_party_settings:
   paragraph_view_mode:
     enabled: false
@@ -12,4 +13,6 @@ label: 'News info + Image'
 icon_uuid: null
 icon_default: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  paragraphs_behaviour_image_and_text:
+    enabled: true
