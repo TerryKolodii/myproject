@@ -65,7 +65,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_news_paragraph_1:
-    type: paragraphs
+    type: entity_reference_paragraphs
     weight: 4
     settings:
       title: Paragraph
@@ -74,12 +74,6 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
     third_party_settings: {  }
     region: content
   field_short_description:
