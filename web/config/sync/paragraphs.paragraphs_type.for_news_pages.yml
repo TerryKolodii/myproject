@@ -16,3 +16,5 @@ description: ''
 behavior_plugins:
   paragraphs_behaviour_image_and_text:
     enabled: true
+  paragraphs_behaviour_paragraph_title:
+    enabled: true
