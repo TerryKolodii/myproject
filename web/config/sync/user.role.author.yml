@@ -1,0 +1,12 @@
+uuid: 02ea698f-674c-44b0-a18d-4d3685b10ce1
+langcode: en
+status: true
+dependencies: {  }
+id: author
+label: Author
+weight: 3
+is_admin: null
+permissions:
+  - 'create news content'
+  - 'edit any news content'
+  - 'view own unpublished content'
