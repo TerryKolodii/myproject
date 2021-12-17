@@ -23,17 +23,12 @@ mode: teaser
 content:
   field_image:
     type: image
-    weight: 1
+    weight: 0
     region: content
     label: hidden
     settings:
       image_style: ''
       image_link: ''
-    third_party_settings: {  }
-  links:
-    weight: 0
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden:
   body: true
@@ -44,4 +39,5 @@ hidden:
   field_short_description: true
   field_tag: true
   langcode: true
+  links: true
   search_api_excerpt: true
